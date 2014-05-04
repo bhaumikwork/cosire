@@ -1,0 +1,29 @@
+cs:
+  refinery:
+    plugins:
+      packages:
+        title: Packages
+    packages:
+      admin:
+        packages:
+          actions:
+            create_new: Přidat Package
+            reorder: Řadit Packages
+            reorder_done: Konec řazení Packages
+          records:
+            title: Packages
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Packages. Zvolte "Přidat Package" pro přidání prvního package.
+          package:
+            view_live_html: Zobrazit náhled package<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit package
+            delete: Smazat package
+      packages:
+        show:
+          other: Další Packages
+  activerecord:
+    attributes:
+      'refinery/packages/package':
+        name: Name
+        profile: Profile
+        description: Description

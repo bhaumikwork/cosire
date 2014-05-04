@@ -1,0 +1,29 @@
+it:
+  refinery:
+    plugins:
+      packages:
+        title: Packages
+    packages:
+      admin:
+        packages:
+          actions:
+            create_new: Aggiungi Nuovo Package
+            reorder: Riordina Packages
+            reorder_done: Termina il Riordino di Packages
+          records:
+            title: Packages
+            sorry_no_results: "Spiacenti! Nessun risultato trovato"
+            no_items_yet: Non ci sono ancora Packages. Clicca "Aggiungi Nuovo Package" per aggiungere il tuo primo package.
+          package:
+            view_live_html: Guarda live questo package <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo package
+            delete: Rimuovi per sempre questo package
+      packages:
+        show:
+          other: Altri Packages
+  activerecord:
+    attributes:
+      'refinery/packages/package':
+        name: Name
+        profile: Profile
+        description: Description

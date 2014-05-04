@@ -1,0 +1,29 @@
+fr:
+  refinery:
+    plugins:
+      digitals:
+        title: Digitals
+    digitals:
+      admin:
+        digitals:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Digital
+            reorder: Réordonner les Digitals
+            reorder_done: Fin de réordonnancement des Digitals
+          records:
+            title: Digitals
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Digital. Cliquer sur "Créer un(e) nouve(au/l/lle) Digital" pour créer votre premi(er/ère) digital.'
+          digital:
+            view_live_html: Voir ce(t/tte) digital <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) digital
+            delete: Supprimer définitivement ce(t/tte) digital
+      digitals:
+        show:
+          other: Autres Digitals
+  activerecord:
+    attributes:
+      'refinery/digitals/digital':
+        name: Name
+        profile: Profile
+        description: Description

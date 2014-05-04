@@ -1,0 +1,30 @@
+es:
+  refinery:
+    plugins:
+      digitals:
+        title: Digitals
+#        article: masculino/femenino
+    digitals:
+      admin:
+        digitals:
+          actions:
+            create_new: Crear nuevo digital
+            reorder: Reordenar digitals
+            reorder_done: Reordenación de digitals completada
+          records:
+            title: Digitals
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay digitals todavía. Pulsa en "Crear nuevo Digital" para crear tu primer digital.
+          digital:
+            view_live_html: Ver este digital como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este digital
+            delete: Borrar este digital para siempre
+      digitals:
+        show:
+          other: Otros digitals
+  activerecord:
+    attributes:
+      'refinery/digitals/digital':
+        name: Name
+        profile: Profile
+        description: Description

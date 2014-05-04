@@ -1,0 +1,32 @@
+zh-CN:
+  refinery:
+    plugins:
+      boas:
+        title: Boas
+    boas:
+      admin:
+        boas:
+          actions:
+            create_new: 建立新的 Boa
+            reorder: 对 Boas 重新排序
+            reorder_done: 对 Boas 的重新排序结束
+          records:
+            title: Boas
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Boas yet. Click "Add New Boa" to add your first boa.
+            no_items_yet: 目前没有 Boas . 点击 "Add New Boa" 创建一个boa.
+          boa:
+            view_live_html: 查看 boa 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 boa
+            delete: 永久删除 boa
+      boas:
+        show:
+          other: 其他 Boas
+  activerecord:
+    attributes:
+      'refinery/boas/boa':
+        name: Name
+        designation: Designation
+        profile: Profile
+        about: About

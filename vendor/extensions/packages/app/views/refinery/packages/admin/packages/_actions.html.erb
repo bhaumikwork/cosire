@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::Packages::Admin::PackagesController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.packages_admin_packages_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_packages_admin_package_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::Packages::Admin::PackagesController.sortable? && ::Refinery::Packages::Package.many? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Packages"),
+                 refinery.packages_admin_packages_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Packages"),
+                 refinery.packages_admin_packages_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

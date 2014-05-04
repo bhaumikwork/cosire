@@ -1,0 +1,29 @@
+nb:
+  refinery:
+    plugins:
+      strategies:
+        title: Strategies
+    strategies:
+      admin:
+        strategies:
+          actions:
+            create_new: Lag en ny Strategy
+            reorder: Endre rekkefølgen på Strategies
+            reorder_done: Ferdig å endre rekkefølgen Strategies
+          records:
+            title: Strategies
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Strategies enda. Klikk på "Lag en ny Strategy" for å legge til din første strategy.
+          strategy:
+            view_live_html: Vis hvordan denne strategy ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne strategy
+            delete: Fjern denne strategy permanent
+      strategies:
+        show:
+          other: Andre Strategies
+  activerecord:
+    attributes:
+      'refinery/strategies/strategy':
+        name: Name
+        profile: Profile
+        description: Description

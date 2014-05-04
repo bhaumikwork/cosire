@@ -1,0 +1,172 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* Default Styles */
+
+body {
+	margin-top: 10px;
+	letter-spacing: 0.2px;
+
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	font-family: "Roboto", sans-serif;
+}
+
+h1 {
+	font-weight: 200;
+	-webkit-font-smoothing: antialiased;
+
+}
+
+h2 {
+	font-weight: 200;
+	-webkit-font-smoothing: antialiased;
+}
+
+.block {
+
+
+}
+
+.block1 {
+	background: url('blocks/1a.jpg');
+	cursor: pointer;
+}
+
+.block1:hover {
+	background: url('blocks/1b.png'), url('blocks/1a.jpg');
+	transition: 0.4s;
+}
+
+.block2 {
+	background: url('blocks/3a.jpg');
+	cursor: pointer;
+}
+
+.block2:hover {
+	background: url('blocks/3b.png'), url('blocks/3a.jpg');
+	transition: 0.4s;
+}
+
+.block3 {
+	background: url('blocks/2a.jpg');
+	cursor: pointer;
+}
+
+.block3:hover {
+	background: url('blocks/2b.png'), url('blocks/2a.jpg');
+	transition: 0.4s;
+}
+
+
+.block4 {
+	background: url('blocks/4.jpg');;
+}
+
+.block5 {
+	background: url('blocks/5a.jpg');
+	cursor: pointer;
+}
+
+.block5:hover {
+	background: url('blocks/5b.png'), url('blocks/5a.jpg');
+	transition: 0.4s;
+}
+
+.block6 {
+	background: url('blocks/6a.png') no-repeat 150px 75px, url('blocks/6.jpg');
+	cursor: pointer;
+}
+
+.block6:hover {
+	background: url('blocks/6b.png') no-repeat 150px 75px, url('blocks/6.jpg');
+	transition: 0.4s;
+}
+
+.block8 {
+	background: #bbb url('blocks/7a.png');
+	cursor: pointer;
+}
+
+.block8:hover {
+	background: #000 url('blocks/7a.png');
+	transition: 0.1s;
+}
+
+
+.block9 {
+	background: url('blocks/8a.jpg');
+	cursor: pointer;
+}
+
+.block9:hover {
+	background: url('blocks/8b.png'), url('blocks/8a.jpg');
+	transition: 0.4s;
+}
+
+
+.block7 {
+	background: url('blocks/9a.jpg');
+	cursor: pointer;
+}
+
+.block7:hover {
+	background: url('blocks/9b.png'), url('blocks/9a.jpg');
+	transition: 0.4s;
+}
+
+
+.blocks {
+	height: 600px;
+	margin-bottom: 20px;
+}
+
+.pre-footer hr{
+	margin-bottom: 0px;
+}
+
+.client-div{
+	height: 170px;
+}
+
+.contact-div{
+	
+	
+	img {
+		margin-top: -40px;
+	}
+}
+
+hr.what-is-cosire{
+	margin-bottom: 10px;
+	margin-top: 30px;
+}
+
+.why-cosire {
+
+	.image-block {
+		margin-top: 30px;
+	}
+	
+}
+
+hr.why-design {
+	margin-bottom: 10px;
+	margin-top: 40px;
+}
+
+.why-design {
+	.image-block {
+		margin-top: 30px;
+	}
+	
+	h2 {
+		margin-left: 25px;
+	}
+}
+
+.pull25 {
+	margin-left: 25px;
+}

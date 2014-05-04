@@ -1,0 +1,16 @@
+<%= render 'refinery/admin/search_header', :url => refinery.boas_admin_boas_path %>
+<div class='pagination_container'>
+  <% if @boas.any? %>
+    <%= render 'boas' %>
+  <% else %>
+    <p>
+      <% unless searching? %>
+        <strong>
+          <%= t('.no_items_yet') %>
+        </strong>
+      <% else %>
+        <%= t('no_results', :scope => 'refinery.admin.search') %>
+      <% end %>
+    </p>
+  <% end %>
+</div>

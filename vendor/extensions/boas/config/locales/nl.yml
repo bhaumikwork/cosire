@@ -1,0 +1,30 @@
+nl:
+  refinery:
+    plugins:
+      boas:
+        title: Boas
+    boas:
+      admin:
+        boas:
+          actions:
+            create_new: Nieuwe Boa toevoegen
+            reorder: De volgorde van de Boas wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Boa-volgorde
+          records:
+            title: Boas
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Boas. Druk op 'Nieuwe Boa toevoegen' om de eerste toe te voegen.
+          boa:
+            view_live_html: Deze boa op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze boa
+            delete: Deze boa definitief verwijderen
+      boas:
+        show:
+          other: Andere Boas
+  activerecord:
+    attributes:
+      'refinery/boas/boa':
+        name: Name
+        designation: Designation
+        profile: Profile
+        about: About

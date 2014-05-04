@@ -1,0 +1,39 @@
+<% content_for :body_content_title do %>
+  <%= @package.name %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1>Name</h1>
+    <p>
+      <%=raw @package.name %>
+    </p>
+  </section>
+  <section>
+    <h1>Profile</h1>
+    <p>
+      <%= image_fu @package.profile, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Description</h1>
+    <p>
+      <%=raw @package.description %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="packages">
+      <% @packages.each do |package| %>
+        <li>
+          <%= link_to package.name, refinery.packages_package_path(package) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

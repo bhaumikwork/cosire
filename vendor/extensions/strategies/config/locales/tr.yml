@@ -1,0 +1,29 @@
+tr:
+  refinery:
+    plugins:
+      strategies:
+        title: Strategies
+    strategies:
+      admin:
+        strategies:
+          actions:
+            create_new: Yeni Ekle Strategy
+            reorder: Tekrar sirala Strategies
+            reorder_done: Tekrar siralama tamamlandiStrategies
+          records:
+            title: Strategies
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Strategies yok henuz.  Tikla "Yeni Ekle Strategy" eklemek senin ilk strategy.
+          strategy:
+            view_live_html: Bunu canlu strategy goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle strategy
+            delete: Bunu Sil strategy sonsuza dek
+      strategies:
+        show:
+          other: Diger Strategies
+  activerecord:
+    attributes:
+      'refinery/strategies/strategy':
+        name: Name
+        profile: Profile
+        description: Description

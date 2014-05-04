@@ -1,0 +1,39 @@
+<% content_for :body_content_title do %>
+  <%= @digital.name %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1>Name</h1>
+    <p>
+      <%=raw @digital.name %>
+    </p>
+  </section>
+  <section>
+    <h1>Profile</h1>
+    <p>
+      <%= image_fu @digital.profile, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Description</h1>
+    <p>
+      <%=raw @digital.description %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="digitals">
+      <% @digitals.each do |digital| %>
+        <li>
+          <%= link_to digital.name, refinery.digitals_digital_path(digital) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

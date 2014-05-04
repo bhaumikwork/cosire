@@ -1,0 +1,29 @@
+fr:
+  refinery:
+    plugins:
+      spaces:
+        title: Spaces
+    spaces:
+      admin:
+        spaces:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Space
+            reorder: Réordonner les Spaces
+            reorder_done: Fin de réordonnancement des Spaces
+          records:
+            title: Spaces
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Space. Cliquer sur "Créer un(e) nouve(au/l/lle) Space" pour créer votre premi(er/ère) space.'
+          space:
+            view_live_html: Voir ce(t/tte) space <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) space
+            delete: Supprimer définitivement ce(t/tte) space
+      spaces:
+        show:
+          other: Autres Spaces
+  activerecord:
+    attributes:
+      'refinery/spaces/space':
+        name: Name
+        profile: Profile
+        description: Description

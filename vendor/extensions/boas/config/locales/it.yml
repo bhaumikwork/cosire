@@ -1,0 +1,30 @@
+it:
+  refinery:
+    plugins:
+      boas:
+        title: Boas
+    boas:
+      admin:
+        boas:
+          actions:
+            create_new: Aggiungi Nuovo Boa
+            reorder: Riordina Boas
+            reorder_done: Termina il Riordino di Boas
+          records:
+            title: Boas
+            sorry_no_results: "Spiacenti! Nessun risultato trovato"
+            no_items_yet: Non ci sono ancora Boas. Clicca "Aggiungi Nuovo Boa" per aggiungere il tuo primo boa.
+          boa:
+            view_live_html: Guarda live questo boa <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo boa
+            delete: Rimuovi per sempre questo boa
+      boas:
+        show:
+          other: Altri Boas
+  activerecord:
+    attributes:
+      'refinery/boas/boa':
+        name: Name
+        designation: Designation
+        profile: Profile
+        about: About

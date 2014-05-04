@@ -1,0 +1,111 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// About Page
+
+.about {
+	img.about-banner {
+		
+	}
+}
+
+
+// Vision page
+.vision {
+	margin-top: 30px;
+	
+	h2 {
+		text-align: center;
+	}
+	
+	img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+
+// DOs and DOnts page
+
+.dosanddonts {
+	hr.dospage{
+		margin-bottom: 30px;
+		margin-top: 30px;
+	}
+}
+
+
+// Team Page
+
+.team-cosire, .advisors-board {
+	.row {
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+
+	h3 {
+		font-weight: 200;
+		margin-top: 10px;
+		margin-bottom: 0px;
+		text-align: center;
+	}
+	
+	p.designation {
+		text-align: center;
+		color: #a7a7a7;
+	}
+}
+
+// Clients page
+
+.clients {
+	img {
+		margin-bottom: 20px;
+	}
+}
+
+// Partners page
+
+.partner {
+	img {
+		margin-bottom: 20px;
+	}
+}
+
+
+// Service Page
+.service {
+	img {
+		margin-bottom: 20px;
+	}
+	
+	a {
+		color: #777;
+	}
+	
+	a:hover {
+		color: black;
+		text-decoration: none;
+	}
+	
+	.row {
+		margin-top: 30px;
+		margin-bottom: 20px;
+	}
+	
+	.caption {
+		margin-top: -13px;
+		text-align: center;
+	}
+}
+
+// Product Page
+
+// COntact page
+.contact {
+	h3 {
+		font-weight: 200; 
+	}
+}

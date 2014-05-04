@@ -1,0 +1,30 @@
+cs:
+  refinery:
+    plugins:
+      boas:
+        title: Boas
+    boas:
+      admin:
+        boas:
+          actions:
+            create_new: Přidat Boa
+            reorder: Řadit Boas
+            reorder_done: Konec řazení Boas
+          records:
+            title: Boas
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Boas. Zvolte "Přidat Boa" pro přidání prvního boa.
+          boa:
+            view_live_html: Zobrazit náhled boa<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit boa
+            delete: Smazat boa
+      boas:
+        show:
+          other: Další Boas
+  activerecord:
+    attributes:
+      'refinery/boas/boa':
+        name: Name
+        designation: Designation
+        profile: Profile
+        about: About

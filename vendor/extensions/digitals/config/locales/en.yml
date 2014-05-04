@@ -1,0 +1,29 @@
+en:
+  refinery:
+    plugins:
+      digitals:
+        title: Digitals
+    digitals:
+      admin:
+        digitals:
+          actions:
+            create_new: Add New Digital
+            reorder: Reorder Digitals
+            reorder_done: Done Reordering Digitals
+          records:
+            title: Digitals
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Digitals yet. Click "Add New Digital" to add your first digital.
+          digital:
+            view_live_html: View this digital live <br/><em>(opens in a new window)</em>
+            edit: Edit this digital
+            delete: Remove this digital forever
+      digitals:
+        show:
+          other: Other Digitals
+  activerecord:
+    attributes:
+      'refinery/digitals/digital':
+        name: Name
+        profile: Profile
+        description: Description

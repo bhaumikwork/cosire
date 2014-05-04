@@ -1,0 +1,29 @@
+sk:
+  refinery:
+    plugins:
+      digitals:
+        title: Digitals
+    digitals:
+      admin:
+        digitals:
+          actions:
+            create_new: Pridať Digital
+            reorder: Preusporiadať Digitals
+            reorder_done: Koniec radenia Digitals
+          records:
+            title: Digitals
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Digitals. Kliknite na "Pridať Digital" pre pridanie prvého digital.
+          digital:
+            view_live_html: Zobraziť náhľad digital<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť digital
+            delete: Zmazať digital
+      digitals:
+        show:
+          other: Daľšie Digitals
+  activerecord:
+    attributes:
+      'refinery/digitals/digital':
+        name: Name
+        profile: Profile
+        description: Description

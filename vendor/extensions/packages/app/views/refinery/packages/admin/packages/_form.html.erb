@@ -1,0 +1,39 @@
+<%= form_for [refinery, :packages_admin, @package] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @package,
+              :include_object_name => true %>
+
+  <div class='field'>
+    <%= f.label :name -%>
+    <%= f.text_field :name, :class => 'larger widest' -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :profile -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :profile_id,
+               :image => @package.profile,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= render '/refinery/admin/wysiwyg',
+                :f => f,
+                :fields => [:description],
+                :object => "packages/package" -%>
+  </div>
+
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.packages.admin.packages.package'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @package.name) -%>
+<% end -%>
+
+<% content_for :javascripts do -%>
+  <script>
+    $(document).ready(function(){
+      page_options.init(false, '', '');
+    });
+  </script>
+<% end -%>

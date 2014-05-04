@@ -1,0 +1,29 @@
+en:
+  refinery:
+    plugins:
+      strategies:
+        title: Strategies
+    strategies:
+      admin:
+        strategies:
+          actions:
+            create_new: Add New Strategy
+            reorder: Reorder Strategies
+            reorder_done: Done Reordering Strategies
+          records:
+            title: Strategies
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Strategies yet. Click "Add New Strategy" to add your first strategy.
+          strategy:
+            view_live_html: View this strategy live <br/><em>(opens in a new window)</em>
+            edit: Edit this strategy
+            delete: Remove this strategy forever
+      strategies:
+        show:
+          other: Other Strategies
+  activerecord:
+    attributes:
+      'refinery/strategies/strategy':
+        name: Name
+        profile: Profile
+        description: Description

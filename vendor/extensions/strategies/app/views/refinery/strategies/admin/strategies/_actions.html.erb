@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::Strategies::Admin::StrategiesController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.strategies_admin_strategies_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_strategies_admin_strategy_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::Strategies::Admin::StrategiesController.sortable? && ::Refinery::Strategies::Strategy.many? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Strategies"),
+                 refinery.strategies_admin_strategies_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Strategies"),
+                 refinery.strategies_admin_strategies_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

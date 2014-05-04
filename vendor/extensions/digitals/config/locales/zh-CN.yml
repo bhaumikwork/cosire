@@ -1,0 +1,31 @@
+zh-CN:
+  refinery:
+    plugins:
+      digitals:
+        title: Digitals
+    digitals:
+      admin:
+        digitals:
+          actions:
+            create_new: 建立新的 Digital
+            reorder: 对 Digitals 重新排序
+            reorder_done: 对 Digitals 的重新排序结束
+          records:
+            title: Digitals
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Digitals yet. Click "Add New Digital" to add your first digital.
+            no_items_yet: 目前没有 Digitals . 点击 "Add New Digital" 创建一个digital.
+          digital:
+            view_live_html: 查看 digital 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 digital
+            delete: 永久删除 digital
+      digitals:
+        show:
+          other: 其他 Digitals
+  activerecord:
+    attributes:
+      'refinery/digitals/digital':
+        name: Name
+        profile: Profile
+        description: Description

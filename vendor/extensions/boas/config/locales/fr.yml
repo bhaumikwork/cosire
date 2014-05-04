@@ -1,0 +1,30 @@
+fr:
+  refinery:
+    plugins:
+      boas:
+        title: Boas
+    boas:
+      admin:
+        boas:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Boa
+            reorder: Réordonner les Boas
+            reorder_done: Fin de réordonnancement des Boas
+          records:
+            title: Boas
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Boa. Cliquer sur "Créer un(e) nouve(au/l/lle) Boa" pour créer votre premi(er/ère) boa.'
+          boa:
+            view_live_html: Voir ce(t/tte) boa <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) boa
+            delete: Supprimer définitivement ce(t/tte) boa
+      boas:
+        show:
+          other: Autres Boas
+  activerecord:
+    attributes:
+      'refinery/boas/boa':
+        name: Name
+        designation: Designation
+        profile: Profile
+        about: About

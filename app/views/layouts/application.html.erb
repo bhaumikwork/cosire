@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Cosire Innovations</title>
+	<%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500' rel='stylesheet' type='text/css'>
+	<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+	<%= csrf_meta_tags %>
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+
+	<div class="header row">
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="/">
+						<div class="logo">
+							<%= image_tag('logo.png') %>
+						</div>
+					</a>
+				</div>
+
+					<ul class="nav navbar-nav pull-right">
+						<li class="odd-menu"><a href="/">Home</a></li>
+						<li class="dropdown even-menu">
+							<a href="/pages/about" class="dropdown-toggle" data-toggle="dropdown">About</a>
+							<ul class="dropdown-menu">
+								<li><a href="/pages/about">About Cosire</a></li>
+								<li><a href="/pages/vision">Our Values</a></li>
+								<li><a href="/pages/approach">Our Approach</a></li>
+								<li><a href="/pages/dosdonts">Who we are?</a></li>
+							</ul>
+						</li>
+						<li class="dropdown odd-menu">
+							<a href="/pages/team" class="dropdown-toggle" data-toggle="dropdown">Synergy</a>
+							<ul class="dropdown-menu">
+								<li><a href="/pages/team">The Team</a></li>
+								<li><a href="/pages/clients">Our Clients</a></li>
+								<li><a href="/pages/partners">Associates</a></li>
+								<li><a href="/pages/partners">Our Startups</a></li>
+								<li><a href="/pages/partners">Achievements</a></li>
+								<li><a href="/pages/partners">Intellectual Properties</a></li>
+							</ul>
+						</li>
+
+						<li class="dropdown even-menu">
+							<a href="/pages/services" class="dropdown-toggle" data-toggle="dropdown">Services</a>
+							<ul class="dropdown-menu">
+								<li><a href="/pages/services">Our Offering</a></li>
+								<li><a href="/pages/product">Product Design</a></li>
+								<li><a href="/pages/strategy">Strategy Design</a></li>
+								<li><a href="/pages/brand">Brand Design</a></li>
+								<li><a href="/pages/space">Space Design</a></li>
+								<li><a href="/pages/packaging">Packaging Design</a></li>
+								<li><a href="/pages/digital">Digital Design</a></li>
+							</ul>
+						</li>
+
+						<li class="odd-menu"><a href="/pages/work">Work</a></li>
+
+						<li class="even-menu"><a href="/pages/why">Why Cosire?</a></li>
+
+						<li class="odd-menu"><a href="/pages/contact">Contact</a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+			<hr class="front-line">
+			</div>
+
+		</nav>
+
+
+<div class="container">
+	<%= yield %>	
+</div>
+
+
+
+<div class="pre-footer container">
+	<hr>
+	<div class="col-md-6 client">
+		<h2 class="brand-quote">Clients</h2>
+		<div class="client-div">
+			<a href="/pages/clients">
+				<%= image_tag('client.png') %>
+			</a>
+		</div>
+	</div>
+
+	<div class="col-md-6">
+		<h2 style="margin-left:13px; margin-bottom:25px">Get in touch</h2>
+		<div class="contact-div col-md-6">
+			<p>Cosire Innovations Pvt Ltd</p>
+			<p>NDBI, NID, Paldi,</p>
+			<p>Ahmedabad - 380007</p>
+			<p>mob.: (+91) 9510810866</p>
+			<p>email: contact@cosire.com</p>
+		</div>
+		<div class="contact-div col-md-5">
+			<a href="/pages/contact">
+				<%= image_tag('cosiremap.jpg') %>
+			</a>
+		</div>
+	</div>
+</div>
+
+<div class="footer">
+	<div class="container">
+		<hr>
+		<div class="col-md-2">
+			<ul class="nav">
+				<li class="odd-footer-menu">
+					<a href="/">
+						Welcome to Cosire
+					</a>
+				</li>
+				<li class="even-footer-menu">
+					<a href="/pages/services">
+						What we Offer
+					</a>    
+				</li>
+
+				<li class="odd-footer-menu">
+					<a href="/pages/team">
+						Team Cosire
+					</a>    
+				</li>
+
+				<li class="even-footer-menu">
+					<a href="/pages/termsconditions">
+						Terms &amp; Conditions
+					</a>    
+				</li>
+
+			</ul>
+		</div>
+		<div class="col-md-2">
+			<ul class="nav">
+				<li class="even-footer-menu">
+					<a href="/pages/about">
+						What is Cosire
+					</a>    
+				</li>
+				<li class="odd-footer-menu">
+					<a href="/pages/why">
+						Why Cosire
+					</a>    
+				</li>
+				<li class="even-footer-menu">
+					<a href="/pages/career">
+						Career @ Cosire
+					</a>    
+				</li>
+				<li class="odd-footer-menu">
+					<a href="/pages/clients">
+						Our Clients
+					</a>    
+				</li>
+			</ul>
+		</div>
+		<div class="col-md-2">
+			<ul class="nav">
+				<li class="odd-footer-menu">
+					<a href="/pages/contact">
+						Reach Us
+					</a>    
+				</li>
+
+				<li class="even-footer-menu">
+					<a href="/pages/work">
+						Previous Projects
+					</a>    
+				</li>
+
+				<li class="odd-footer-menu">
+					<a href="/pages/dosdonts">
+						Dos and Don'ts
+					</a>    
+				</li>
+
+				<li class="even-footer-menu">
+					<a href="/pages/designahmedabad">
+						Design in Ahmedabad
+					</a>    
+				</li>
+			</ul>
+		</div>
+		<div class="col-md-6 copyright">
+			<div class="social">
+				<%= image_tag("socialicons/facebook.png") %>
+				<%= image_tag("socialicons/linkedin.png") %>
+				<%= image_tag("socialicons/behance.png") %>
+				<%= image_tag("socialicons/youtube.png") %>
+				<%= image_tag("socialicons/blogger.png") %>
+			</div>
+			<div class="copyright-info">
+				Cosire is a trademark of Cosire Design Innovation Pvt Ltd.<br>
+				All rights reserved
+			</div>
+		</div>
+		<hr>
+	</div>
+
+</div>
+
+</body>
+</html>

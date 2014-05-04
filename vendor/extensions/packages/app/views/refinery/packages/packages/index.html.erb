@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="packages">
+    <% @packages.each do |package| %>
+      <li>
+        <%= link_to package.name, refinery.packages_package_path(package) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

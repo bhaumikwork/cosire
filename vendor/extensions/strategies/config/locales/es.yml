@@ -1,0 +1,30 @@
+es:
+  refinery:
+    plugins:
+      strategies:
+        title: Strategies
+#        article: masculino/femenino
+    strategies:
+      admin:
+        strategies:
+          actions:
+            create_new: Crear nuevo strategy
+            reorder: Reordenar strategies
+            reorder_done: Reordenación de strategies completada
+          records:
+            title: Strategies
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay strategies todavía. Pulsa en "Crear nuevo Strategy" para crear tu primer strategy.
+          strategy:
+            view_live_html: Ver este strategy como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este strategy
+            delete: Borrar este strategy para siempre
+      strategies:
+        show:
+          other: Otros strategies
+  activerecord:
+    attributes:
+      'refinery/strategies/strategy':
+        name: Name
+        profile: Profile
+        description: Description

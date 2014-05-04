@@ -1,0 +1,29 @@
+en:
+  refinery:
+    plugins:
+      spaces:
+        title: Spaces
+    spaces:
+      admin:
+        spaces:
+          actions:
+            create_new: Add New Space
+            reorder: Reorder Spaces
+            reorder_done: Done Reordering Spaces
+          records:
+            title: Spaces
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Spaces yet. Click "Add New Space" to add your first space.
+          space:
+            view_live_html: View this space live <br/><em>(opens in a new window)</em>
+            edit: Edit this space
+            delete: Remove this space forever
+      spaces:
+        show:
+          other: Other Spaces
+  activerecord:
+    attributes:
+      'refinery/spaces/space':
+        name: Name
+        profile: Profile
+        description: Description

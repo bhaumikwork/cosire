@@ -1,0 +1,31 @@
+zh-CN:
+  refinery:
+    plugins:
+      spaces:
+        title: Spaces
+    spaces:
+      admin:
+        spaces:
+          actions:
+            create_new: 建立新的 Space
+            reorder: 对 Spaces 重新排序
+            reorder_done: 对 Spaces 的重新排序结束
+          records:
+            title: Spaces
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Spaces yet. Click "Add New Space" to add your first space.
+            no_items_yet: 目前没有 Spaces . 点击 "Add New Space" 创建一个space.
+          space:
+            view_live_html: 查看 space 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 space
+            delete: 永久删除 space
+      spaces:
+        show:
+          other: 其他 Spaces
+  activerecord:
+    attributes:
+      'refinery/spaces/space':
+        name: Name
+        profile: Profile
+        description: Description

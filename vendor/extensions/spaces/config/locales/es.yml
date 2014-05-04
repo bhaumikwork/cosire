@@ -1,0 +1,30 @@
+es:
+  refinery:
+    plugins:
+      spaces:
+        title: Spaces
+#        article: masculino/femenino
+    spaces:
+      admin:
+        spaces:
+          actions:
+            create_new: Crear nuevo space
+            reorder: Reordenar spaces
+            reorder_done: Reordenación de spaces completada
+          records:
+            title: Spaces
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay spaces todavía. Pulsa en "Crear nuevo Space" para crear tu primer space.
+          space:
+            view_live_html: Ver este space como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este space
+            delete: Borrar este space para siempre
+      spaces:
+        show:
+          other: Otros spaces
+  activerecord:
+    attributes:
+      'refinery/spaces/space':
+        name: Name
+        profile: Profile
+        description: Description

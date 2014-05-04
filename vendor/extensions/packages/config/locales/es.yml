@@ -1,0 +1,30 @@
+es:
+  refinery:
+    plugins:
+      packages:
+        title: Packages
+#        article: masculino/femenino
+    packages:
+      admin:
+        packages:
+          actions:
+            create_new: Crear nuevo package
+            reorder: Reordenar packages
+            reorder_done: Reordenación de packages completada
+          records:
+            title: Packages
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay packages todavía. Pulsa en "Crear nuevo Package" para crear tu primer package.
+          package:
+            view_live_html: Ver este package como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este package
+            delete: Borrar este package para siempre
+      packages:
+        show:
+          other: Otros packages
+  activerecord:
+    attributes:
+      'refinery/packages/package':
+        name: Name
+        profile: Profile
+        description: Description
