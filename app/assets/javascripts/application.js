@@ -14,3 +14,27 @@
 //= require jquery_ujs
 //= require_tree .
 
+
+
+$( document ).ready(function() {
+	n = $('div.banner img').size();
+	
+	if (n == 1){
+		return 0;
+	} else {
+		$('div.banner').addClass("carousel slide");	
+		$('div.banner').attr("id", "carousel-example-generic");
+		$('div.banner').attr("data-ride", "carousel");
+		$("div.banner img").unwrap();
+		$("div.banner img").wrap('<div class="item">');
+		$("div.banner .item").first().addClass("active");
+		$("div.banner .item").wrapAll('<div class="carousel-inner">');	
+		$('div.banner').prepend("<ol class='carousel-indicators'></ol>")
+		for (i = 0; i < n; i++) {
+			$('ol.carousel-indicators').append("<li data-target='#carousel-example-generic' data-slide-to=" + i +"></li>")	
+		}
+		$('div.banner .carousel-indicators li').first().addClass('active');
+	}
+	
+	
+});

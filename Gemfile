@@ -50,11 +50,5 @@ gem 'refinerycms-inquiries', '~> 2.1.0'
 #  gem 'refinerycms-page-images', '~> 2.1.0'
 
 gem 'refinerycms-blocks', :path => 'vendor/extensions'
-gem 'refinerycms-members', :path => 'vendor/extensions'
+
 gem 'refinerycms-boas', :path => 'vendor/extensions'
-gem 'refinerycms-products', :path => 'vendor/extensions'
-gem 'refinerycms-strategies', :path => 'vendor/extensions'
-gem 'refinerycms-spaces', :path => 'vendor/extensions'
-gem 'refinerycms-packages', :path => 'vendor/extensions'
-gem 'refinerycms-brands', :path => 'vendor/extensions'
-gem 'refinerycms-digitals', :path => 'vendor/extensions'

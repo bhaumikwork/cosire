@@ -5,20 +5,6 @@ PATH
       refinerycms-core (~> 2.1.2)
     refinerycms-boas (1.0)
       refinerycms-core (~> 2.1.2)
-    refinerycms-brands (1.0)
-      refinerycms-core (~> 2.1.2)
-    refinerycms-digitals (1.0)
-      refinerycms-core (~> 2.1.2)
-    refinerycms-members (1.0)
-      refinerycms-core (~> 2.1.2)
-    refinerycms-packages (1.0)
-      refinerycms-core (~> 2.1.2)
-    refinerycms-products (1.0)
-      refinerycms-core (~> 2.1.2)
-    refinerycms-spaces (1.0)
-      refinerycms-core (~> 2.1.2)
-    refinerycms-strategies (1.0)
-      refinerycms-core (~> 2.1.2)
 
 GEM
   remote: https://rubygems.org/
@@ -232,14 +218,7 @@ DEPENDENCIES
   refinerycms-blocks!
   refinerycms-blog (~> 2.1.0)
   refinerycms-boas!
-  refinerycms-brands!
-  refinerycms-digitals!
   refinerycms-inquiries (~> 2.1.0)
-  refinerycms-members!
-  refinerycms-packages!
-  refinerycms-products!
-  refinerycms-spaces!
-  refinerycms-strategies!
   sass-rails (~> 3.2.3)
   sqlite3
   uglifier (>= 1.0.3)

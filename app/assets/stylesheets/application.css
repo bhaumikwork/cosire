@@ -36,6 +36,7 @@ h1 {
 h2 {
   font-weight: 200;
   -webkit-font-smoothing: antialiased;
+  margin-bottom: 20px !important;
 }
 
 .brand-quote {
@@ -103,9 +104,15 @@ p {
   display: inline;
   padding-left: 25px;
   cursor: pointer;
-  font-size: 17px;
-  font-weight: 200;
+  font-size: 17px !important;
+  font-weight: 200 !important;
+  margin-bottom: -10px !important;
   color: #808285;
+}
+
+
+.navigation ul li a {
+  font-weight: 400 !important;
 }
 
 .odd-menu .dropdown-menu li a:hover{
@@ -113,6 +120,14 @@ p {
 
   margin-left: -2px !important;
 }
+
+/* ul li {
+  line-height: 24px;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  font-weight: 300;
+  margin-bottom: 10px;
+} */
 
 .even-menu .dropdown-menu li a:hover{
   color: #729e32 !important;
@@ -272,4 +287,14 @@ hr.front-line {
     top: 11px;
     left: -6px;
 }
+
+
+.carousel .item {-webkit-transition: opacity 3s !important; -moz-transition: opacity 3s !important; -ms-transition: opacity 3s !important; -o-transition: opacity 3s !important; transition: opacity 3s !important;}
+.carousel .active.left {left:0 !important;opacity:0 !important;z-index:2 !important;}
+.carousel .next {left:0 !important;opacity:1 !important;z-index:1 !important;}
+
+.carousel-indicators {
+  
+}
+
 
