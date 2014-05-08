@@ -1,0 +1,30 @@
+sk:
+  refinery:
+    plugins:
+      startups:
+        title: Startups
+    startups:
+      admin:
+        startups:
+          actions:
+            create_new: Pridať Startup
+            reorder: Preusporiadať Startups
+            reorder_done: Koniec radenia Startups
+          records:
+            title: Startups
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Startups. Kliknite na "Pridať Startup" pre pridanie prvého startup.
+          startup:
+            view_live_html: Zobraziť náhľad startup<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť startup
+            delete: Zmazať startup
+      startups:
+        show:
+          other: Daľšie Startups
+  activerecord:
+    attributes:
+      'refinery/startups/startup':
+        title: Title
+        oneliner: Oneliner
+        profile: Profile
+        description: Description

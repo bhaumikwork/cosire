@@ -1,0 +1,48 @@
+<%= form_for [refinery, :industries_admin, @industry] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @industry,
+              :include_object_name => true %>
+
+  <div class='field'>
+    <%= f.label :title -%>
+    <%= f.text_field :title, :class => 'larger widest' -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :hover_image -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :hover_image_id,
+               :image => @industry.hover_image,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :profile -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :profile_id,
+               :image => @industry.profile,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= render '/refinery/admin/wysiwyg',
+                :f => f,
+                :fields => [:description],
+                :object => "industries/industry" -%>
+  </div>
+
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.industries.admin.industries.industry'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @industry.title) -%>
+<% end -%>
+
+<% content_for :javascripts do -%>
+  <script>
+    $(document).ready(function(){
+      page_options.init(false, '', '');
+    });
+  </script>
+<% end -%>

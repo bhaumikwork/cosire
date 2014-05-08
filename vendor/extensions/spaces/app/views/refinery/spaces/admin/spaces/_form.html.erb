@@ -1,0 +1,48 @@
+<%= form_for [refinery, :spaces_admin, @space] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @space,
+              :include_object_name => true %>
+
+  <div class='field'>
+    <%= f.label :title -%>
+    <%= f.text_field :title, :class => 'larger widest' -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :hover_image -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :hover_image_id,
+               :image => @space.hover_image,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :profile -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :profile_id,
+               :image => @space.profile,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= render '/refinery/admin/wysiwyg',
+                :f => f,
+                :fields => [:description],
+                :object => "spaces/space" -%>
+  </div>
+
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.spaces.admin.spaces.space'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @space.title) -%>
+<% end -%>
+
+<% content_for :javascripts do -%>
+  <script>
+    $(document).ready(function(){
+      page_options.init(false, '', '');
+    });
+  </script>
+<% end -%>

@@ -1,0 +1,30 @@
+nl:
+  refinery:
+    plugins:
+      interactions:
+        title: Interactions
+    interactions:
+      admin:
+        interactions:
+          actions:
+            create_new: Nieuwe Interaction toevoegen
+            reorder: De volgorde van de Interactions wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Interaction-volgorde
+          records:
+            title: Interactions
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Interactions. Druk op 'Nieuwe Interaction toevoegen' om de eerste toe te voegen.
+          interaction:
+            view_live_html: Deze interaction op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze interaction
+            delete: Deze interaction definitief verwijderen
+      interactions:
+        show:
+          other: Andere Interactions
+  activerecord:
+    attributes:
+      'refinery/interactions/interaction':
+        title: Title
+        hover_image: Hover Image
+        profile: Profile
+        description: Description

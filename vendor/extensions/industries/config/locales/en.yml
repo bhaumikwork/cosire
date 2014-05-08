@@ -1,0 +1,30 @@
+en:
+  refinery:
+    plugins:
+      industries:
+        title: Industries
+    industries:
+      admin:
+        industries:
+          actions:
+            create_new: Add New Industry
+            reorder: Reorder Industries
+            reorder_done: Done Reordering Industries
+          records:
+            title: Industries
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Industries yet. Click "Add New Industry" to add your first industry.
+          industry:
+            view_live_html: View this industry live <br/><em>(opens in a new window)</em>
+            edit: Edit this industry
+            delete: Remove this industry forever
+      industries:
+        show:
+          other: Other Industries
+  activerecord:
+    attributes:
+      'refinery/industries/industry':
+        title: Title
+        hover_image: Hover Image
+        profile: Profile
+        description: Description

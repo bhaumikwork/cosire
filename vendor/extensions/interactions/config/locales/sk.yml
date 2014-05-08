@@ -1,0 +1,30 @@
+sk:
+  refinery:
+    plugins:
+      interactions:
+        title: Interactions
+    interactions:
+      admin:
+        interactions:
+          actions:
+            create_new: Pridať Interaction
+            reorder: Preusporiadať Interactions
+            reorder_done: Koniec radenia Interactions
+          records:
+            title: Interactions
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Interactions. Kliknite na "Pridať Interaction" pre pridanie prvého interaction.
+          interaction:
+            view_live_html: Zobraziť náhľad interaction<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť interaction
+            delete: Zmazať interaction
+      interactions:
+        show:
+          other: Daľšie Interactions
+  activerecord:
+    attributes:
+      'refinery/interactions/interaction':
+        title: Title
+        hover_image: Hover Image
+        profile: Profile
+        description: Description

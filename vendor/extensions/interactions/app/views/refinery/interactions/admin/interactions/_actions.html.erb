@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::Interactions::Admin::InteractionsController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.interactions_admin_interactions_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_interactions_admin_interaction_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::Interactions::Admin::InteractionsController.sortable? && ::Refinery::Interactions::Interaction.many? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Interactions"),
+                 refinery.interactions_admin_interactions_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Interactions"),
+                 refinery.interactions_admin_interactions_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

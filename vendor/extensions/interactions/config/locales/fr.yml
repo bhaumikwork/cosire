@@ -1,0 +1,30 @@
+fr:
+  refinery:
+    plugins:
+      interactions:
+        title: Interactions
+    interactions:
+      admin:
+        interactions:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Interaction
+            reorder: Réordonner les Interactions
+            reorder_done: Fin de réordonnancement des Interactions
+          records:
+            title: Interactions
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Interaction. Cliquer sur "Créer un(e) nouve(au/l/lle) Interaction" pour créer votre premi(er/ère) interaction.'
+          interaction:
+            view_live_html: Voir ce(t/tte) interaction <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) interaction
+            delete: Supprimer définitivement ce(t/tte) interaction
+      interactions:
+        show:
+          other: Autres Interactions
+  activerecord:
+    attributes:
+      'refinery/interactions/interaction':
+        title: Title
+        hover_image: Hover Image
+        profile: Profile
+        description: Description

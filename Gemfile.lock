@@ -1,9 +1,25 @@
 PATH
   remote: vendor/extensions
   specs:
+    refinerycms-achievements (1.0)
+      refinerycms-core (~> 2.1.2)
     refinerycms-blocks (1.0)
       refinerycms-core (~> 2.1.2)
     refinerycms-boas (1.0)
+      refinerycms-core (~> 2.1.2)
+    refinerycms-brands (1.0)
+      refinerycms-core (~> 2.1.2)
+    refinerycms-industries (1.0)
+      refinerycms-core (~> 2.1.2)
+    refinerycms-interactions (1.0)
+      refinerycms-core (~> 2.1.2)
+    refinerycms-ips (1.0)
+      refinerycms-core (~> 2.1.2)
+    refinerycms-spaces (1.0)
+      refinerycms-core (~> 2.1.2)
+    refinerycms-startups (1.0)
+      refinerycms-core (~> 2.1.2)
+    refinerycms-teammembers (1.0)
       refinerycms-core (~> 2.1.2)
 
 GEM
@@ -214,11 +230,19 @@ DEPENDENCIES
   jquery-rails
   rails (= 3.2.12)
   refinerycms (~> 2.1.0)
+  refinerycms-achievements!
   refinerycms-acts-as-indexed (~> 1.0.0)
   refinerycms-blocks!
   refinerycms-blog (~> 2.1.0)
   refinerycms-boas!
+  refinerycms-brands!
+  refinerycms-industries!
   refinerycms-inquiries (~> 2.1.0)
+  refinerycms-interactions!
+  refinerycms-ips!
+  refinerycms-spaces!
+  refinerycms-startups!
+  refinerycms-teammembers!
   sass-rails (~> 3.2.3)
   sqlite3
   uglifier (>= 1.0.3)

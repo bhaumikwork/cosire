@@ -3,3 +3,234 @@
 <div class="banner"><%=raw @page.content_for(:banner) %></div>
 
 <p><%=raw @page.content_for(:body) %></p>
+
+
+
+<% if @page.title == 'Team'%>
+<hr>
+<div class="team">
+<div class="row">
+	
+
+<h2>Team Cosire</h2>
+<div class="team-profiles">
+	<% @teammembers.each do |teammember| %>
+	
+		<div class="col-md-6 team-member">
+				<div class="photo col-md-4">
+					<div class="visible">
+						<%= image_fu teammember.profile, "160x200" %>
+					</div>
+					<div class="hidden">	
+						<%= image_fu teammember.hover_image, "160x200" %>
+					</div>
+				</div>
+				
+				<div class="profile col-md-8">
+					<h3><%=raw teammember.name %></h3>
+					<p class="designation"><%=raw teammember.designation %></p>
+					<p><%=raw teammember.description %></p>
+				</div>
+		</div>
+		<% next teammember %>
+		
+		<div class="col-md-6 team-member">
+				<div class="photo col-md-4">
+					<div class="visible">
+						<%= image_fu teammember.profile, "160x200" %>
+					</div>
+					<div class="hidden">	
+						<%= image_fu teammember.hover_image, "160x200" %>
+					</div>
+				</div>
+				
+				<div class="profile col-md-8">
+					<h3><%=raw teammember.name %></h3>
+					<p class="designation"><%=raw teammember.designation %></p>
+					<p><%=raw teammember.description %></p>
+				</div>
+		</div>
+	
+	<% end %>
+	</div>
+	</div>
+</div>
+
+<hr>
+<div class="advisors-board row">
+<h2>Board of Advisors</h2>
+
+	<% @boas.each do |boa| %>
+
+		<div class="col-md-6 team-member">
+				<div class="photo col-md-4">
+					<%= image_fu boa.profile, "160x200" %>
+				</div>
+
+				<div class="profile col-md-8">
+					<h3><%=raw boa.name %></h3>
+					<p class="designation"><%=raw boa.designation %></p>
+					<p><%=raw boa.description %></p>
+				</div>
+		</div>
+		<% next boa %>
+
+		<div class="col-md-6 team-member">
+				<div class="photo col-md-4">
+					<%= image_fu boa.profile, "160x200" %>
+				</div>
+
+				<div class="profile col-md-8">
+					<h3><%=raw boa.name %></h3>
+					<p class="designation"><%=raw boa.designation %></p>
+					<p><%=raw boa.description %></p>
+				</div>
+		</div>
+	</div>
+	<% end %>
+</div>
+
+
+
+
+<% end %>
+
+
+
+<% if @page.title == 'Vision'%>
+
+<div class="container vision">
+	<div class="col-md-3">
+		<%= image_tag('vision/1.png') %>
+		<h2>Vision</h2>
+		<p>We want to accelerate businesses with our design intervention and help our clients compete 
+with established national and international players. We strive to be an important part of 
+creative economy.</p>
+	</div>
+
+	<div class="col-md-3">
+		<%= image_tag('vision/2.png') %>
+		<h2>Mission</h2>
+		<p>Making design viable for every business by providing then one-stop design solution.</p>
+	</div>
+
+	<div class="col-md-3">
+		<%= image_tag('vision/3.png') %>
+		<h2>Core Values</h2>
+		<p>We enthusiastically explore different design opportunities keeping in mind our clients’ business 
+requirements. We come up with original, novel, genuine concepts and never rely on design 
+ripped off from others in the name of inspiration.</p>
+	</div>
+
+	<div class="col-md-3">
+		<%= image_tag('vision/4.png') %>
+		<h2>Phillosophy</h2>
+		<p>We believe “growth” is a natural extension of our work. Our services transfer real value to 
+clients and help them grow. It’s a win-win strategy – when our clients grow, we grow with them. Hands-on, we learn by co-working; by trying out exciting new things and learning by 
+doing.</p>
+	</div>
+</div>
+
+<% end %>
+
+
+<% if @page.title == 'Work'%>
+
+<style>
+
+.isotope-item {
+	z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+	pointer-events: none;
+	z-index: 1;
+}
+
+						.isotope,
+.isotope .isotope-item {
+	/* change duration value to whatever you like */
+	-webkit-transition-duration: 0.8s;
+		 -moz-transition-duration: 0.8s;
+			-ms-transition-duration: 0.8s;
+			 -o-transition-duration: 0.8s;
+					transition-duration: 0.8s;
+}
+
+.isotope {
+	-webkit-transition-property: height, width;
+		 -moz-transition-property: height, width;
+			-ms-transition-property: height, width;
+			 -o-transition-property: height, width;
+					transition-property: height, width;
+}
+
+.isotope .isotope-item {
+	-webkit-transition-property: -webkit-transform, opacity;
+		 -moz-transition-property:    -moz-transform, opacity;
+			-ms-transition-property:     -ms-transform, opacity;
+			 -o-transition-property:      -o-transform, opacity;
+					transition-property:         transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+	-webkit-transition-duration: 0s;
+		 -moz-transition-duration: 0s;
+			-ms-transition-duration: 0s;
+			 -o-transition-duration: 0s;
+					transition-duration: 0s;
+}
+
+</style>
+
+ <section id="options" class="clearfix">
+ 		<ul id="filters" class="option-set clearfix options" data-option-key="filter">
+ 			<li><a href="#filter" data-option-value="*" class="selected">All</a></li>
+ 			<li><a href="#filter" data-option-value=".industrial">Industrial</a></li>
+ 			<li><a href="#filter" data-option-value=".brand">Branding</a></li>
+ 			<li><a href="#filter" data-option-value=".interaction">Interaction</a></li>
+ 			<li><a href="#filter" data-option-value=".space">Space</a></li>
+ 			
+ 		</ul>
+ </section> <!-- #options -->
+
+<div id="container" class="clearfix">
+	
+	<% @industries.each do |industry| %>
+	<div class="item industrial" data-category="industrial">
+			<%= link_to industry.title, refinery.industries_industry_path(industry) %>
+			<%= image_fu industry.profile, "300x300" %>
+			<%= image_fu industry.hover_image, "300x300" %>
+	</div>
+	<% end %>
+	
+	<% @brands.each do |brand| %>
+	<div class="item brand" data-category="brand">
+			<%= link_to brand.title, refinery.brands_brand_path(brand) %>
+			<%= image_fu brand.profile, "300x300" %>
+			<%= image_fu brand.hover_image, "300x300" %>
+	</div>
+	<% end %>
+	
+	<% @spaces.each do |space| %>
+	<div class="item space" data-category="space">
+			<%= link_to space.title, refinery.spaces_space_path(space) %>
+			<%= image_fu space.profile, "300x300" %>
+			<%= image_fu space.hover_image, "300x300" %>
+	</div>
+	<% end %>
+
+	<% @interactions.each do |interaction| %>
+	<div class="item interaction" data-category="interaction">
+			<%= link_to interaction.title, refinery.interactions_interaction_path(interaction) %>
+			<%= image_fu interaction.profile, "300x300" %>
+			<%= image_fu interaction.hover_image, "300x300" %>
+	</div>
+	<% end %>
+</div>
+
+<% end %>

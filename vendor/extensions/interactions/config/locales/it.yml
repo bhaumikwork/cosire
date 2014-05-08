@@ -1,0 +1,30 @@
+it:
+  refinery:
+    plugins:
+      interactions:
+        title: Interactions
+    interactions:
+      admin:
+        interactions:
+          actions:
+            create_new: Aggiungi Nuovo Interaction
+            reorder: Riordina Interactions
+            reorder_done: Termina il Riordino di Interactions
+          records:
+            title: Interactions
+            sorry_no_results: "Spiacenti! Nessun risultato trovato"
+            no_items_yet: Non ci sono ancora Interactions. Clicca "Aggiungi Nuovo Interaction" per aggiungere il tuo primo interaction.
+          interaction:
+            view_live_html: Guarda live questo interaction <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo interaction
+            delete: Rimuovi per sempre questo interaction
+      interactions:
+        show:
+          other: Altri Interactions
+  activerecord:
+    attributes:
+      'refinery/interactions/interaction':
+        title: Title
+        hover_image: Hover Image
+        profile: Profile
+        description: Description

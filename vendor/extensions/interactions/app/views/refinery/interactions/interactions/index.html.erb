@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="interactions">
+    <% @interactions.each do |interaction| %>
+      <li>
+        <%= link_to interaction.title, refinery.interactions_interaction_path(interaction) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

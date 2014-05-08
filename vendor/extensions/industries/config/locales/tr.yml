@@ -1,0 +1,30 @@
+tr:
+  refinery:
+    plugins:
+      industries:
+        title: Industries
+    industries:
+      admin:
+        industries:
+          actions:
+            create_new: Yeni Ekle Industry
+            reorder: Tekrar sirala Industries
+            reorder_done: Tekrar siralama tamamlandiIndustries
+          records:
+            title: Industries
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Industries yok henuz.  Tikla "Yeni Ekle Industry" eklemek senin ilk industry.
+          industry:
+            view_live_html: Bunu canlu industry goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle industry
+            delete: Bunu Sil industry sonsuza dek
+      industries:
+        show:
+          other: Diger Industries
+  activerecord:
+    attributes:
+      'refinery/industries/industry':
+        title: Title
+        hover_image: Hover Image
+        profile: Profile
+        description: Description

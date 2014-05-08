@@ -1,0 +1,32 @@
+zh-CN:
+  refinery:
+    plugins:
+      industries:
+        title: Industries
+    industries:
+      admin:
+        industries:
+          actions:
+            create_new: 建立新的 Industry
+            reorder: 对 Industries 重新排序
+            reorder_done: 对 Industries 的重新排序结束
+          records:
+            title: Industries
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Industries yet. Click "Add New Industry" to add your first industry.
+            no_items_yet: 目前没有 Industries . 点击 "Add New Industry" 创建一个industry.
+          industry:
+            view_live_html: 查看 industry 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 industry
+            delete: 永久删除 industry
+      industries:
+        show:
+          other: 其他 Industries
+  activerecord:
+    attributes:
+      'refinery/industries/industry':
+        title: Title
+        hover_image: Hover Image
+        profile: Profile
+        description: Description

@@ -1,0 +1,20 @@
+<% content_for :body_content_title do %>
+  <%= @industry.title %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1><%=raw @industry.title %></h1>
+    
+  </section>
+  <section>
+    
+  <section>
+    <p>
+      <%=raw @industry.description %>
+    </p>
+  </section>
+<% end %>
+
+
+<%= render '/refinery/content_page' %>

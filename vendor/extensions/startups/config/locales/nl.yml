@@ -1,0 +1,30 @@
+nl:
+  refinery:
+    plugins:
+      startups:
+        title: Startups
+    startups:
+      admin:
+        startups:
+          actions:
+            create_new: Nieuwe Startup toevoegen
+            reorder: De volgorde van de Startups wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Startup-volgorde
+          records:
+            title: Startups
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Startups. Druk op 'Nieuwe Startup toevoegen' om de eerste toe te voegen.
+          startup:
+            view_live_html: Deze startup op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze startup
+            delete: Deze startup definitief verwijderen
+      startups:
+        show:
+          other: Andere Startups
+  activerecord:
+    attributes:
+      'refinery/startups/startup':
+        title: Title
+        oneliner: Oneliner
+        profile: Profile
+        description: Description

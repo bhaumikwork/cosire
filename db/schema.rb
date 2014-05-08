@@ -11,7 +11,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140502091739) do
+ActiveRecord::Schema.define(:version => 20140507132913) do
+
+  create_table "refinery_achievements", :force => true do |t|
+    t.string   "title"
+    t.integer  "profile_id"
+    t.text     "description"
+    t.integer  "position"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
 
   create_table "refinery_blocks", :force => true do |t|
     t.string   "name"
@@ -112,12 +121,13 @@ ActiveRecord::Schema.define(:version => 20140502091739) do
   end
 
   create_table "refinery_brands", :force => true do |t|
-    t.string   "name"
+    t.string   "title"
+    t.integer  "hover_image_id"
     t.integer  "profile_id"
     t.text     "description"
     t.integer  "position"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
   end
 
   create_table "refinery_digitals", :force => true do |t|
@@ -140,6 +150,16 @@ ActiveRecord::Schema.define(:version => 20140502091739) do
     t.datetime "updated_at",      :null => false
   end
 
+  create_table "refinery_industries", :force => true do |t|
+    t.string   "title"
+    t.integer  "hover_image_id"
+    t.integer  "profile_id"
+    t.text     "description"
+    t.integer  "position"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+  end
+
   create_table "refinery_inquiries_inquiries", :force => true do |t|
     t.string   "name"
     t.string   "email"
@@ -151,6 +171,25 @@ ActiveRecord::Schema.define(:version => 20140502091739) do
   end
 
   add_index "refinery_inquiries_inquiries", ["id"], :name => "index_refinery_inquiries_inquiries_on_id"
+
+  create_table "refinery_interactions", :force => true do |t|
+    t.string   "title"
+    t.integer  "hover_image_id"
+    t.integer  "profile_id"
+    t.text     "description"
+    t.integer  "position"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+  end
+
+  create_table "refinery_ips", :force => true do |t|
+    t.string   "title"
+    t.integer  "profile_id"
+    t.text     "description"
+    t.integer  "position"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
 
   create_table "refinery_members", :force => true do |t|
     t.string   "name"
@@ -279,7 +318,18 @@ ActiveRecord::Schema.define(:version => 20140502091739) do
   add_index "refinery_settings", ["name"], :name => "index_refinery_settings_on_name"
 
   create_table "refinery_spaces", :force => true do |t|
-    t.string   "name"
+    t.string   "title"
+    t.integer  "hover_image_id"
+    t.integer  "profile_id"
+    t.text     "description"
+    t.integer  "position"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+  end
+
+  create_table "refinery_startups", :force => true do |t|
+    t.string   "title"
+    t.string   "oneliner"
     t.integer  "profile_id"
     t.text     "description"
     t.integer  "position"
@@ -294,6 +344,17 @@ ActiveRecord::Schema.define(:version => 20140502091739) do
     t.integer  "position"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+  end
+
+  create_table "refinery_teammembers", :force => true do |t|
+    t.string   "name"
+    t.string   "designation"
+    t.integer  "hover_image_id"
+    t.integer  "profile_id"
+    t.text     "description"
+    t.integer  "position"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
   end
 
   create_table "refinery_user_plugins", :force => true do |t|

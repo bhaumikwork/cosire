@@ -1,0 +1,31 @@
+es:
+  refinery:
+    plugins:
+      interactions:
+        title: Interactions
+#        article: masculino/femenino
+    interactions:
+      admin:
+        interactions:
+          actions:
+            create_new: Crear nuevo interaction
+            reorder: Reordenar interactions
+            reorder_done: Reordenación de interactions completada
+          records:
+            title: Interactions
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay interactions todavía. Pulsa en "Crear nuevo Interaction" para crear tu primer interaction.
+          interaction:
+            view_live_html: Ver este interaction como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este interaction
+            delete: Borrar este interaction para siempre
+      interactions:
+        show:
+          other: Otros interactions
+  activerecord:
+    attributes:
+      'refinery/interactions/interaction':
+        title: Title
+        hover_image: Hover Image
+        profile: Profile
+        description: Description

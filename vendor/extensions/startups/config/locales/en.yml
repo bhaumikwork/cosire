@@ -1,0 +1,30 @@
+en:
+  refinery:
+    plugins:
+      startups:
+        title: Startups
+    startups:
+      admin:
+        startups:
+          actions:
+            create_new: Add New Startup
+            reorder: Reorder Startups
+            reorder_done: Done Reordering Startups
+          records:
+            title: Startups
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Startups yet. Click "Add New Startup" to add your first startup.
+          startup:
+            view_live_html: View this startup live <br/><em>(opens in a new window)</em>
+            edit: Edit this startup
+            delete: Remove this startup forever
+      startups:
+        show:
+          other: Other Startups
+  activerecord:
+    attributes:
+      'refinery/startups/startup':
+        title: Title
+        oneliner: Oneliner
+        profile: Profile
+        description: Description

@@ -1,0 +1,31 @@
+es:
+  refinery:
+    plugins:
+      industries:
+        title: Industries
+#        article: masculino/femenino
+    industries:
+      admin:
+        industries:
+          actions:
+            create_new: Crear nuevo industry
+            reorder: Reordenar industries
+            reorder_done: Reordenación de industries completada
+          records:
+            title: Industries
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay industries todavía. Pulsa en "Crear nuevo Industry" para crear tu primer industry.
+          industry:
+            view_live_html: Ver este industry como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este industry
+            delete: Borrar este industry para siempre
+      industries:
+        show:
+          other: Otros industries
+  activerecord:
+    attributes:
+      'refinery/industries/industry':
+        title: Title
+        hover_image: Hover Image
+        profile: Profile
+        description: Description

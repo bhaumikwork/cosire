@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::Startups::Admin::StartupsController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.startups_admin_startups_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_startups_admin_startup_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::Startups::Admin::StartupsController.sortable? && ::Refinery::Startups::Startup.many? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Startups"),
+                 refinery.startups_admin_startups_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Startups"),
+                 refinery.startups_admin_startups_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

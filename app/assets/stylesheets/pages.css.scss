@@ -39,22 +39,29 @@
 
 // Team Page
 
-.team-cosire, .advisors-board {
+.team, .advisors-board {
 	.row {
-		margin-top: 20px;
-		margin-bottom: 10px;
+		margin-bottom: 20px;
 	}
-
+	.team-member {
+		margin-bottom: 20px;
+	}
 	h3 {
 		font-weight: 200;
 		margin-top: 10px;
 		margin-bottom: 0px;
-		text-align: center;
 	}
 	
 	p.designation {
-		text-align: center;
 		color: #a7a7a7;
+	}
+	
+	.photo {
+		margin-top: 10px;
+	}
+	
+	.hidden {
+		display: none;
 	}
 }
 
@@ -109,3 +116,5 @@
 		font-weight: 200; 
 	}
 }
+
+

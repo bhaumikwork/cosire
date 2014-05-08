@@ -1,0 +1,30 @@
+tr:
+  refinery:
+    plugins:
+      interactions:
+        title: Interactions
+    interactions:
+      admin:
+        interactions:
+          actions:
+            create_new: Yeni Ekle Interaction
+            reorder: Tekrar sirala Interactions
+            reorder_done: Tekrar siralama tamamlandiInteractions
+          records:
+            title: Interactions
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Interactions yok henuz.  Tikla "Yeni Ekle Interaction" eklemek senin ilk interaction.
+          interaction:
+            view_live_html: Bunu canlu interaction goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle interaction
+            delete: Bunu Sil interaction sonsuza dek
+      interactions:
+        show:
+          other: Diger Interactions
+  activerecord:
+    attributes:
+      'refinery/interactions/interaction':
+        title: Title
+        hover_image: Hover Image
+        profile: Profile
+        description: Description

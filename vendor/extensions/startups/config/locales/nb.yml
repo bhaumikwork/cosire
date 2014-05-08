@@ -1,0 +1,30 @@
+nb:
+  refinery:
+    plugins:
+      startups:
+        title: Startups
+    startups:
+      admin:
+        startups:
+          actions:
+            create_new: Lag en ny Startup
+            reorder: Endre rekkefølgen på Startups
+            reorder_done: Ferdig å endre rekkefølgen Startups
+          records:
+            title: Startups
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Startups enda. Klikk på "Lag en ny Startup" for å legge til din første startup.
+          startup:
+            view_live_html: Vis hvordan denne startup ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne startup
+            delete: Fjern denne startup permanent
+      startups:
+        show:
+          other: Andre Startups
+  activerecord:
+    attributes:
+      'refinery/startups/startup':
+        title: Title
+        oneliner: Oneliner
+        profile: Profile
+        description: Description

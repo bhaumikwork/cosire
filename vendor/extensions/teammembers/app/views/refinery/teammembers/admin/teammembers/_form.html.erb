@@ -1,0 +1,53 @@
+<%= form_for [refinery, :teammembers_admin, @teammember] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @teammember,
+              :include_object_name => true %>
+
+  <div class='field'>
+    <%= f.label :name -%>
+    <%= f.text_field :name, :class => 'larger widest' -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :designation -%>
+    <%= f.text_field :designation -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :hover_image -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :hover_image_id,
+               :image => @teammember.hover_image,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :profile -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :profile_id,
+               :image => @teammember.profile,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= render '/refinery/admin/wysiwyg',
+                :f => f,
+                :fields => [:description],
+                :object => "teammembers/teammember" -%>
+  </div>
+
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.teammembers.admin.teammembers.teammember'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @teammember.name) -%>
+<% end -%>
+
+<% content_for :javascripts do -%>
+  <script>
+    $(document).ready(function(){
+      page_options.init(false, '', '');
+    });
+  </script>
+<% end -%>

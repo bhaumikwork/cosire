@@ -25,6 +25,7 @@ $( document ).ready(function() {
 		$('div.banner').addClass("carousel slide");	
 		$('div.banner').attr("id", "carousel-example-generic");
 		$('div.banner').attr("data-ride", "carousel");
+		$('div.banner').attr("data-interval", "2000");
 		$("div.banner img").unwrap();
 		$("div.banner img").wrap('<div class="item">');
 		$("div.banner .item").first().addClass("active");
@@ -37,4 +38,10 @@ $( document ).ready(function() {
 	}
 	
 	
+	$('.team .team-profiles .photo').on('mouseenter','div.visible',function() {
+			 $(this).removeClass("visible").addClass("hidden");
+			 $(this).siblings("div").removeClass("hidden");
+		});
+		
+
 });

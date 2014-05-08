@@ -1,0 +1,30 @@
+nl:
+  refinery:
+    plugins:
+      spaces:
+        title: Spaces
+    spaces:
+      admin:
+        spaces:
+          actions:
+            create_new: Nieuwe Space toevoegen
+            reorder: De volgorde van de Spaces wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Space-volgorde
+          records:
+            title: Spaces
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Spaces. Druk op 'Nieuwe Space toevoegen' om de eerste toe te voegen.
+          space:
+            view_live_html: Deze space op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze space
+            delete: Deze space definitief verwijderen
+      spaces:
+        show:
+          other: Andere Spaces
+  activerecord:
+    attributes:
+      'refinery/spaces/space':
+        title: Title
+        hover_image: Hover Image
+        profile: Profile
+        description: Description

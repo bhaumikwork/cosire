@@ -1,0 +1,30 @@
+es:
+  refinery:
+    plugins:
+      ips:
+        title: Ips
+#        article: masculino/femenino
+    ips:
+      admin:
+        ips:
+          actions:
+            create_new: Crear nuevo ip
+            reorder: Reordenar ips
+            reorder_done: Reordenación de ips completada
+          records:
+            title: Ips
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay ips todavía. Pulsa en "Crear nuevo Ip" para crear tu primer ip.
+          ip:
+            view_live_html: Ver este ip como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este ip
+            delete: Borrar este ip para siempre
+      ips:
+        show:
+          other: Otros ips
+  activerecord:
+    attributes:
+      'refinery/ips/ip':
+        title: Title
+        profile: Profile
+        description: Description

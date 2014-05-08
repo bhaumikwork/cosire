@@ -1,0 +1,29 @@
+nl:
+  refinery:
+    plugins:
+      ips:
+        title: Ips
+    ips:
+      admin:
+        ips:
+          actions:
+            create_new: Nieuwe Ip toevoegen
+            reorder: De volgorde van de Ips wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Ip-volgorde
+          records:
+            title: Ips
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Ips. Druk op 'Nieuwe Ip toevoegen' om de eerste toe te voegen.
+          ip:
+            view_live_html: Deze ip op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze ip
+            delete: Deze ip definitief verwijderen
+      ips:
+        show:
+          other: Andere Ips
+  activerecord:
+    attributes:
+      'refinery/ips/ip':
+        title: Title
+        profile: Profile
+        description: Description

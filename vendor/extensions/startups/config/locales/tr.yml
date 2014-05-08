@@ -1,0 +1,30 @@
+tr:
+  refinery:
+    plugins:
+      startups:
+        title: Startups
+    startups:
+      admin:
+        startups:
+          actions:
+            create_new: Yeni Ekle Startup
+            reorder: Tekrar sirala Startups
+            reorder_done: Tekrar siralama tamamlandiStartups
+          records:
+            title: Startups
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Startups yok henuz.  Tikla "Yeni Ekle Startup" eklemek senin ilk startup.
+          startup:
+            view_live_html: Bunu canlu startup goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle startup
+            delete: Bunu Sil startup sonsuza dek
+      startups:
+        show:
+          other: Diger Startups
+  activerecord:
+    attributes:
+      'refinery/startups/startup':
+        title: Title
+        oneliner: Oneliner
+        profile: Profile
+        description: Description

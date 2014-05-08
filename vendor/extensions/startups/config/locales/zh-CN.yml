@@ -1,0 +1,32 @@
+zh-CN:
+  refinery:
+    plugins:
+      startups:
+        title: Startups
+    startups:
+      admin:
+        startups:
+          actions:
+            create_new: 建立新的 Startup
+            reorder: 对 Startups 重新排序
+            reorder_done: 对 Startups 的重新排序结束
+          records:
+            title: Startups
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Startups yet. Click "Add New Startup" to add your first startup.
+            no_items_yet: 目前没有 Startups . 点击 "Add New Startup" 创建一个startup.
+          startup:
+            view_live_html: 查看 startup 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 startup
+            delete: 永久删除 startup
+      startups:
+        show:
+          other: 其他 Startups
+  activerecord:
+    attributes:
+      'refinery/startups/startup':
+        title: Title
+        oneliner: Oneliner
+        profile: Profile
+        description: Description

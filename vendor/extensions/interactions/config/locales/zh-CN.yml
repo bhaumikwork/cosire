@@ -1,0 +1,32 @@
+zh-CN:
+  refinery:
+    plugins:
+      interactions:
+        title: Interactions
+    interactions:
+      admin:
+        interactions:
+          actions:
+            create_new: 建立新的 Interaction
+            reorder: 对 Interactions 重新排序
+            reorder_done: 对 Interactions 的重新排序结束
+          records:
+            title: Interactions
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Interactions yet. Click "Add New Interaction" to add your first interaction.
+            no_items_yet: 目前没有 Interactions . 点击 "Add New Interaction" 创建一个interaction.
+          interaction:
+            view_live_html: 查看 interaction 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 interaction
+            delete: 永久删除 interaction
+      interactions:
+        show:
+          other: 其他 Interactions
+  activerecord:
+    attributes:
+      'refinery/interactions/interaction':
+        title: Title
+        hover_image: Hover Image
+        profile: Profile
+        description: Description

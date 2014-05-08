@@ -1,0 +1,30 @@
+nb:
+  refinery:
+    plugins:
+      interactions:
+        title: Interactions
+    interactions:
+      admin:
+        interactions:
+          actions:
+            create_new: Lag en ny Interaction
+            reorder: Endre rekkefølgen på Interactions
+            reorder_done: Ferdig å endre rekkefølgen Interactions
+          records:
+            title: Interactions
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Interactions enda. Klikk på "Lag en ny Interaction" for å legge til din første interaction.
+          interaction:
+            view_live_html: Vis hvordan denne interaction ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne interaction
+            delete: Fjern denne interaction permanent
+      interactions:
+        show:
+          other: Andre Interactions
+  activerecord:
+    attributes:
+      'refinery/interactions/interaction':
+        title: Title
+        hover_image: Hover Image
+        profile: Profile
+        description: Description

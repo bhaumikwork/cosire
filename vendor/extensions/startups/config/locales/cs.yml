@@ -1,0 +1,30 @@
+cs:
+  refinery:
+    plugins:
+      startups:
+        title: Startups
+    startups:
+      admin:
+        startups:
+          actions:
+            create_new: Přidat Startup
+            reorder: Řadit Startups
+            reorder_done: Konec řazení Startups
+          records:
+            title: Startups
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Startups. Zvolte "Přidat Startup" pro přidání prvního startup.
+          startup:
+            view_live_html: Zobrazit náhled startup<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit startup
+            delete: Smazat startup
+      startups:
+        show:
+          other: Další Startups
+  activerecord:
+    attributes:
+      'refinery/startups/startup':
+        title: Title
+        oneliner: Oneliner
+        profile: Profile
+        description: Description

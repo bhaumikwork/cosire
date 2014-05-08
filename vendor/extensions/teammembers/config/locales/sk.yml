@@ -1,0 +1,31 @@
+sk:
+  refinery:
+    plugins:
+      teammembers:
+        title: Teammembers
+    teammembers:
+      admin:
+        teammembers:
+          actions:
+            create_new: Pridať Teammember
+            reorder: Preusporiadať Teammembers
+            reorder_done: Koniec radenia Teammembers
+          records:
+            title: Teammembers
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Teammembers. Kliknite na "Pridať Teammember" pre pridanie prvého teammember.
+          teammember:
+            view_live_html: Zobraziť náhľad teammember<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť teammember
+            delete: Zmazať teammember
+      teammembers:
+        show:
+          other: Daľšie Teammembers
+  activerecord:
+    attributes:
+      'refinery/teammembers/teammember':
+        name: Name
+        designation: Designation
+        hover_image: Hover Image
+        profile: Profile
+        description: Description

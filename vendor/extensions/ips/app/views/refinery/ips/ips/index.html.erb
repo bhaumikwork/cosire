@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="ips">
+    <% @ips.each do |ip| %>
+      <li>
+        <%= link_to ip.title, refinery.ips_ip_path(ip) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

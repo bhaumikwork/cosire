@@ -1,0 +1,30 @@
+fr:
+  refinery:
+    plugins:
+      industries:
+        title: Industries
+    industries:
+      admin:
+        industries:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Industry
+            reorder: Réordonner les Industries
+            reorder_done: Fin de réordonnancement des Industries
+          records:
+            title: Industries
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Industry. Cliquer sur "Créer un(e) nouve(au/l/lle) Industry" pour créer votre premi(er/ère) industry.'
+          industry:
+            view_live_html: Voir ce(t/tte) industry <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) industry
+            delete: Supprimer définitivement ce(t/tte) industry
+      industries:
+        show:
+          other: Autres Industries
+  activerecord:
+    attributes:
+      'refinery/industries/industry':
+        title: Title
+        hover_image: Hover Image
+        profile: Profile
+        description: Description

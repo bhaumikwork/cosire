@@ -1,0 +1,30 @@
+nb:
+  refinery:
+    plugins:
+      industries:
+        title: Industries
+    industries:
+      admin:
+        industries:
+          actions:
+            create_new: Lag en ny Industry
+            reorder: Endre rekkefølgen på Industries
+            reorder_done: Ferdig å endre rekkefølgen Industries
+          records:
+            title: Industries
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Industries enda. Klikk på "Lag en ny Industry" for å legge til din første industry.
+          industry:
+            view_live_html: Vis hvordan denne industry ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne industry
+            delete: Fjern denne industry permanent
+      industries:
+        show:
+          other: Andre Industries
+  activerecord:
+    attributes:
+      'refinery/industries/industry':
+        title: Title
+        hover_image: Hover Image
+        profile: Profile
+        description: Description

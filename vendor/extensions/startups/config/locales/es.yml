@@ -1,0 +1,31 @@
+es:
+  refinery:
+    plugins:
+      startups:
+        title: Startups
+#        article: masculino/femenino
+    startups:
+      admin:
+        startups:
+          actions:
+            create_new: Crear nuevo startup
+            reorder: Reordenar startups
+            reorder_done: Reordenación de startups completada
+          records:
+            title: Startups
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay startups todavía. Pulsa en "Crear nuevo Startup" para crear tu primer startup.
+          startup:
+            view_live_html: Ver este startup como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este startup
+            delete: Borrar este startup para siempre
+      startups:
+        show:
+          other: Otros startups
+  activerecord:
+    attributes:
+      'refinery/startups/startup':
+        title: Title
+        oneliner: Oneliner
+        profile: Profile
+        description: Description

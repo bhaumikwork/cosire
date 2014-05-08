@@ -1,0 +1,29 @@
+fr:
+  refinery:
+    plugins:
+      ips:
+        title: Ips
+    ips:
+      admin:
+        ips:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Ip
+            reorder: Réordonner les Ips
+            reorder_done: Fin de réordonnancement des Ips
+          records:
+            title: Ips
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Ip. Cliquer sur "Créer un(e) nouve(au/l/lle) Ip" pour créer votre premi(er/ère) ip.'
+          ip:
+            view_live_html: Voir ce(t/tte) ip <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) ip
+            delete: Supprimer définitivement ce(t/tte) ip
+      ips:
+        show:
+          other: Autres Ips
+  activerecord:
+    attributes:
+      'refinery/ips/ip':
+        title: Title
+        profile: Profile
+        description: Description

@@ -1,0 +1,30 @@
+nl:
+  refinery:
+    plugins:
+      industries:
+        title: Industries
+    industries:
+      admin:
+        industries:
+          actions:
+            create_new: Nieuwe Industry toevoegen
+            reorder: De volgorde van de Industries wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Industry-volgorde
+          records:
+            title: Industries
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Industries. Druk op 'Nieuwe Industry toevoegen' om de eerste toe te voegen.
+          industry:
+            view_live_html: Deze industry op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze industry
+            delete: Deze industry definitief verwijderen
+      industries:
+        show:
+          other: Andere Industries
+  activerecord:
+    attributes:
+      'refinery/industries/industry':
+        title: Title
+        hover_image: Hover Image
+        profile: Profile
+        description: Description

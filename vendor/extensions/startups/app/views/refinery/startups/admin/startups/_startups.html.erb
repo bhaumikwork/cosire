@@ -1,0 +1,2 @@
+<%= will_paginate @startups if Refinery::Startups::Admin::StartupsController.pageable? %>
+<%= render 'sortable_list' %>

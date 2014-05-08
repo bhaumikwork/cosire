@@ -1,0 +1,31 @@
+en:
+  refinery:
+    plugins:
+      teammembers:
+        title: Teammembers
+    teammembers:
+      admin:
+        teammembers:
+          actions:
+            create_new: Add New Teammember
+            reorder: Reorder Teammembers
+            reorder_done: Done Reordering Teammembers
+          records:
+            title: Teammembers
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Teammembers yet. Click "Add New Teammember" to add your first teammember.
+          teammember:
+            view_live_html: View this teammember live <br/><em>(opens in a new window)</em>
+            edit: Edit this teammember
+            delete: Remove this teammember forever
+      teammembers:
+        show:
+          other: Other Teammembers
+  activerecord:
+    attributes:
+      'refinery/teammembers/teammember':
+        name: Name
+        designation: Designation
+        hover_image: Hover Image
+        profile: Profile
+        description: Description

@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="startups">
+    <% @startups.each do |startup| %>
+      <li>
+        <%= link_to startup.title, refinery.startups_startup_path(startup) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

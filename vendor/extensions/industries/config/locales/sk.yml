@@ -1,0 +1,30 @@
+sk:
+  refinery:
+    plugins:
+      industries:
+        title: Industries
+    industries:
+      admin:
+        industries:
+          actions:
+            create_new: Pridať Industry
+            reorder: Preusporiadať Industries
+            reorder_done: Koniec radenia Industries
+          records:
+            title: Industries
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Industries. Kliknite na "Pridať Industry" pre pridanie prvého industry.
+          industry:
+            view_live_html: Zobraziť náhľad industry<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť industry
+            delete: Zmazať industry
+      industries:
+        show:
+          other: Daľšie Industries
+  activerecord:
+    attributes:
+      'refinery/industries/industry':
+        title: Title
+        hover_image: Hover Image
+        profile: Profile
+        description: Description

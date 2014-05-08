@@ -20,25 +20,43 @@ Refinery::Inquiries::Engine.load_seed
 Refinery::Blocks::Engine.load_seed
 
 # Added by Refinery CMS Members extension
-Refinery::Members::Engine.load_seed
+# Refinery::Members::Engine.load_seed
 
 # Added by Refinery CMS Boas extension
 Refinery::Boas::Engine.load_seed
 
 # Added by Refinery CMS Products extension
-Refinery::Products::Engine.load_seed
+# Refinery::Products::Engine.load_seed
 
 # Added by Refinery CMS Strategies extension
-Refinery::Strategies::Engine.load_seed
+# Refinery::Strategies::Engine.load_seed
 
 # Added by Refinery CMS Spaces extension
 Refinery::Spaces::Engine.load_seed
 
 # Added by Refinery CMS Packages extension
-Refinery::Packages::Engine.load_seed
+# Refinery::Packages::Engine.load_seed
 
 # Added by Refinery CMS Brands extension
 Refinery::Brands::Engine.load_seed
 
 # Added by Refinery CMS Digitals extension
-Refinery::Digitals::Engine.load_seed
+# Refinery::Digitals::Engine.load_seed
+
+# Added by Refinery CMS Industries extension
+Refinery::Industries::Engine.load_seed
+
+# Added by Refinery CMS Interactions extension
+Refinery::Interactions::Engine.load_seed
+
+# Added by Refinery CMS Teammembers extension
+Refinery::Teammembers::Engine.load_seed
+
+# Added by Refinery CMS Startups extension
+Refinery::Startups::Engine.load_seed
+
+# Added by Refinery CMS Achievements extension
+Refinery::Achievements::Engine.load_seed
+
+# Added by Refinery CMS Ips extension
+Refinery::Ips::Engine.load_seed

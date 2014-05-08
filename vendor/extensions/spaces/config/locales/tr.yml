@@ -1,0 +1,30 @@
+tr:
+  refinery:
+    plugins:
+      spaces:
+        title: Spaces
+    spaces:
+      admin:
+        spaces:
+          actions:
+            create_new: Yeni Ekle Space
+            reorder: Tekrar sirala Spaces
+            reorder_done: Tekrar siralama tamamlandiSpaces
+          records:
+            title: Spaces
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Spaces yok henuz.  Tikla "Yeni Ekle Space" eklemek senin ilk space.
+          space:
+            view_live_html: Bunu canlu space goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle space
+            delete: Bunu Sil space sonsuza dek
+      spaces:
+        show:
+          other: Diger Spaces
+  activerecord:
+    attributes:
+      'refinery/spaces/space':
+        title: Title
+        hover_image: Hover Image
+        profile: Profile
+        description: Description

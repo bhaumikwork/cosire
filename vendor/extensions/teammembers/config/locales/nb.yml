@@ -1,0 +1,31 @@
+nb:
+  refinery:
+    plugins:
+      teammembers:
+        title: Teammembers
+    teammembers:
+      admin:
+        teammembers:
+          actions:
+            create_new: Lag en ny Teammember
+            reorder: Endre rekkefølgen på Teammembers
+            reorder_done: Ferdig å endre rekkefølgen Teammembers
+          records:
+            title: Teammembers
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Teammembers enda. Klikk på "Lag en ny Teammember" for å legge til din første teammember.
+          teammember:
+            view_live_html: Vis hvordan denne teammember ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne teammember
+            delete: Fjern denne teammember permanent
+      teammembers:
+        show:
+          other: Andre Teammembers
+  activerecord:
+    attributes:
+      'refinery/teammembers/teammember':
+        name: Name
+        designation: Designation
+        hover_image: Hover Image
+        profile: Profile
+        description: Description
