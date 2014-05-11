@@ -58,11 +58,17 @@
 	
 	.photo {
 		margin-top: 10px;
+		cursor: pointer;
 	}
 	
-	.hidden {
-		display: none;
+	div.normal-image {
+		
 	}
+	
+	div.normal-image{	
+		margin-top: -200px !important;
+	}
+	
 }
 
 // Clients page

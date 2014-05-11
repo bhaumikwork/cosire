@@ -38,10 +38,15 @@ $( document ).ready(function() {
 	}
 	
 	
-	$('.team .team-profiles .photo').on('mouseenter','div.visible',function() {
-			 $(this).removeClass("visible").addClass("hidden");
-			 $(this).siblings("div").removeClass("hidden");
-		});
+	
+		
+	$('.team .team-profiles .photo').on('mouseenter','div.normal-image',function() {
+			$(this).css('visibility', 'hidden');
+			$(this).siblings().css('visibility', 'visible');
+	}).on('mouseleave', 'div.hover-image' ,function() {
+			$(this).css('visibility', 'hidden');
+			$(this).siblings().css('visibility', 'visible');
+	});
 		
 
 });
