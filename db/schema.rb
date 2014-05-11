@@ -130,15 +130,6 @@ ActiveRecord::Schema.define(:version => 20140507132913) do
     t.datetime "updated_at",     :null => false
   end
 
-  create_table "refinery_digitals", :force => true do |t|
-    t.string   "name"
-    t.integer  "profile_id"
-    t.text     "description"
-    t.integer  "position"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
-  end
-
   create_table "refinery_images", :force => true do |t|
     t.string   "image_mime_type"
     t.string   "image_name"
@@ -184,25 +175,6 @@ ActiveRecord::Schema.define(:version => 20140507132913) do
 
   create_table "refinery_ips", :force => true do |t|
     t.string   "title"
-    t.integer  "profile_id"
-    t.text     "description"
-    t.integer  "position"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
-  end
-
-  create_table "refinery_members", :force => true do |t|
-    t.string   "name"
-    t.string   "designation"
-    t.integer  "profile_id"
-    t.text     "about"
-    t.integer  "position"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
-  end
-
-  create_table "refinery_packages", :force => true do |t|
-    t.string   "name"
     t.integer  "profile_id"
     t.text     "description"
     t.integer  "position"
@@ -272,15 +244,6 @@ ActiveRecord::Schema.define(:version => 20140507132913) do
   add_index "refinery_pages", ["parent_id"], :name => "index_refinery_pages_on_parent_id"
   add_index "refinery_pages", ["rgt"], :name => "index_refinery_pages_on_rgt"
 
-  create_table "refinery_products", :force => true do |t|
-    t.string   "name"
-    t.integer  "profile_id"
-    t.text     "description"
-    t.integer  "position"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
-  end
-
   create_table "refinery_resources", :force => true do |t|
     t.string   "file_mime_type"
     t.string   "file_name"
@@ -330,15 +293,6 @@ ActiveRecord::Schema.define(:version => 20140507132913) do
   create_table "refinery_startups", :force => true do |t|
     t.string   "title"
     t.string   "oneliner"
-    t.integer  "profile_id"
-    t.text     "description"
-    t.integer  "position"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
-  end
-
-  create_table "refinery_strategies", :force => true do |t|
-    t.string   "name"
     t.integer  "profile_id"
     t.text     "description"
     t.integer  "position"
