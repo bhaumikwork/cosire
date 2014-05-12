@@ -1,34 +1,85 @@
-<div class="container">
-	<div class="blocks">
-		<div class="col-md-4 block1">
-			<img src="" alt="" height="200">
-		</div>
-		<div class="col-md-4 block2">
-			<img src="" alt="" height="200">
-		</div>
-		<div class="col-md-4 block3">
-			<img src="" alt="" height="200">
-		</div>
-		<div class="col-md-4 block4">
-			<img src="" alt="" height="200">
-		</div>
-		<div class="col-md-4 block5">
-			<img src="" alt="" height="200">
-		</div>
-		<div class="col-md-4 block6">
-			<img src="" alt="" height="200">
-		</div>
-		<div class="col-md-4 block7">
-			<img src="" alt="" height="200">
-		</div>
-		<div class="col-md-4 block8">
-			<img src="" alt="" height="200">
-		</div>
-		<div class="col-md-4 block9">
-			<img src="" alt="" height="200">
-		</div>
+
+<div class="blocks">
+	
+	<% @blocks.each do |block| %>
+	
+		<% if @count == 3 %>
+			<div class="col-md-4 mini-blocks">
+				
+				<div class="col-md-4">
+					<a href="">
+						<div class="home-block">
+							<img src="/assets/6a.png" alt="">
+						</div>
+						<div class="home-block-hover">
+							<img src="/assets/6aa.png" alt="">
+						</div>
+					</a>
+				</div>	
+				
+				<div class="col-md-4">
+					<div class="home-block">
+						<img src="/assets/6b.png" alt="">
+					</div>
+					<div class="home-block-hover">
+							<img src="/assets/6bb.png" alt="">
+						</div>	
+				</div>	
+				
+				<div class="col-md-4">
+					<div class="home-block">
+						<img src="/assets/6c.png" alt="">
+					</div>
+					<div class="home-block-hover">
+						<img src="/assets/6cc.png" alt="">
+					</div>
+				</div>	
+				
+				<div class="col-md-4">
+					<div class="home-block">
+						<img src="/assets/6d.png" alt="">
+					</div>
+					<div class="home-block-hover">
+						<img src="/assets/6dd.png" alt="">
+					</div>
+				</div>	
+				
+				<div class="col-md-4">
+					<div class="home-block">
+						<img src="/assets/6e.png" alt="">
+					</div>
+					<div class="home-block-hover">
+						<img src="/assets/6ee.png" alt="">
+					</div>
+				</div>	
+				
+				<div class="col-md-4">
+					<div class="home-block">
+						<img src="/assets/6f.png" alt="">
+					</div>
+					<div class="home-block-hover">
+						<img src="/assets/6ff.png" alt="">
+					</div>
+				</div>	
+			</div>
+			<% @count = @count + 1 %>
+		<% else %>	
+			<div class="col-md-4 big-blocks">
+			<a href="<%= block.link %>">
+				<div class="home-block">
+					<%= image_fu block.image1, "380x200" %>	
+				</div>
+				<div class="home-block-hover">
+					<%= image_fu block.image2, "380x200" %>	
+				</div>
+			</a>
+			</div>
+		<% @count = @count + 1 %>
+		<% end %>
+	<% end %>
+
 	</div>
-</div>
+
 
 
 <div class="about-cosire container">

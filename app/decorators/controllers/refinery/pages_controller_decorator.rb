@@ -1,6 +1,6 @@
 Refinery::PagesController.class_eval do
 	
-	before_filter :find_all_industries, :find_all_spaces, :find_all_interactions, :find_all_brands, :find_all_teammembers, :find_all_boas
+	before_filter :find_all_industries, :find_all_spaces, :find_all_interactions, :find_all_brands, :find_all_teammembers, :find_all_boas, :find_all_blocks
 	
 	protected
 	
@@ -26,6 +26,11 @@ Refinery::PagesController.class_eval do
 		
 		def find_all_boas
 			@boas ||= ::Refinery::Boas::Boa.all
+		end
+		
+		def find_all_blocks
+			@blocks ||= ::Refinery::Blocks::Block.all 
+			@count = 0
 		end
 		
 end

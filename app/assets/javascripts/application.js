@@ -37,15 +37,37 @@ $( document ).ready(function() {
 		$('div.banner .carousel-indicators li').first().addClass('active');
 	}
 	
-	
-	
 		
+	$('.mini-blocks').on('mouseenter','div.home-block',function() {
+			$(this).css('visibility', 'hidden');
+			$(this).siblings().css('visibility', 'visible').fadeIn(5000);
+	}).on('mouseleave', 'div.home-block-hover' ,function() {
+			$(this).css('visibility', 'hidden');
+			$(this).siblings().css('visibility', 'visible').fadeIn(5000);
+	});
+	
+	$('.big-blocks').on('mouseenter','div.home-block',function() {
+			$(this).css('visibility', 'hidden');
+			$(this).siblings().css('visibility', 'visible').fadeIn(5000);
+	}).on('mouseleave', 'div.home-block-hover' ,function() {
+			$(this).css('visibility', 'hidden');
+			$(this).siblings().css('visibility', 'visible').fadeIn(5000);
+	});
+	
 	$('.team .team-profiles .photo').on('mouseenter','div.normal-image',function() {
-			$(this).css('visibility', 'hidden');
-			$(this).siblings().css('visibility', 'visible');
+			$(this).css({
+				'visibility': 'hidden', 
+				'transition': 'visibility 5s fade'});
+			$(this).siblings().css({
+				visibility: 'visible', 
+				transition: 'visibility 5s fade'});
 	}).on('mouseleave', 'div.hover-image' ,function() {
-			$(this).css('visibility', 'hidden');
-			$(this).siblings().css('visibility', 'visible');
+			$(this).css({
+				'visibility': 'hidden', 
+				'transition': 'visibility 5s fade'});
+			$(this).siblings().css({
+				visibility: 'visible', 
+				transition: 'visibility 5s fade'});
 	});
 		
 
