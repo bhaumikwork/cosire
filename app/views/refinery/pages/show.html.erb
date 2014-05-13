@@ -3,8 +3,419 @@
 <div class="banner"><%=raw @page.content_for(:banner) %></div>
 
 <p><%=raw @page.content_for(:body) %></p>
-<div class="product-page tab-control">
+
+
+
+<% if @page.title == 'Why Cosire'%>
+<div class="why-page tab-control">
+	<ul class="nav nav-tabs">
+		<li class="active"><a href="#zero" data-toggle="tab"><img src="/assets/why/1.png"></a></li>
+		<li><a href="#one" data-toggle="tab"><img src="/assets/why/2.png"></a></li>
+		<li><a href="#two" data-toggle="tab"><img src="/assets/why/3.png"></a></li>
+		<li><a href="#three" data-toggle="tab"><img src="/assets/why/4.png"></a></li>
+		<li><a href="#four" data-toggle="tab"><img src="/assets/why/5.png"></a></li>
+		<li><a href="#five" data-toggle="tab"><img src="/assets/why/6.png"></a></li>
+	</ul>
+
+	<!-- Tab panes -->
+	<div class="tab-content">
+		<div class="tab-pane active" id="zero">
+			<h2>One stop solution<h2>
+			<p>
+				As we practice no-bar-design and provide almost every type of design solution, our clients get to enjoy our full service bouquet. Usually, once they start to work with us, and our understanding of each other’s needs deepen, we become their preferred design partners for all their subsequent service needs. Eventually, this turns out to be a win-win scenario for both parties – it keeps us on the same page with a tried and trusted partner; we begin to synchronize on everything and talk in similar (if not same) visual language.
+			</p>
+
+		</div>
+		<div class="tab-pane" id="one">
+			<h2>Privacy &amp; NDA</h2>
+			<p>
+				At Cosire, we are very careful about confidentiality of sensitive trade information, privacy laws, non disclosure norms and copyright protection. Rest assured that we will never disclose the work of clients – in part of full - to others, without the knowledge and written consent of our clients. Maintaining privacy is ingrained in our organizational DNA. Indeed, we associate with only one client per product line.  Signing NDAs is also part of our statutory process.
+			</p>
+			
+			<p>
+				Here’s a brief outline of our privacy and non-disclosure policy.
+			</p>
+			
+			<ul>
+				<li>Before or at the time of collecting any personal information, we will go great lengths in identifying the purpose for which we are collecting this information.</li>
+				<li>
+					We create intellectual property for our clients for specific, business purposes and no other.
+				</li>
+				<li>
+					During the course of any product development, we collect information through legitimate, ethical means with the knowledge or consent of the person/user we are collecting it from.
+				</li>
+				
+				<li>
+					We are committed to protecting the intellectual property of our clients against leakage, loss or theft, as well as against unauthorized access, use, disclosure, piracy or modification.
+				</li>
+				
+				<li>
+					We are committed to conducting our business in accordance with these ethical guidelines that we have set for ourselves.
+				</li>
+			</ul>
+
+		</div>
+		<div class="tab-pane" id="two">
+			<h2>Our Business Model</h2>
+			<p>
+				Ours is a win-win business model that creates value for our clients and brings more creative challenges to our fold to cut our teeth on. We thrive on these challenges. They make good business sense too. Our design interventions strengthen our client’s position in the market, gets them more business, they make more customer acquisition and they come running back to us for more inputs and innovations with other products. Nearly 50% of our business comes from repeat clientele. Our satisfied customers are our brand ambassadors. We can tank a project but not our client.
+			</p>
+
+		</div>
+
+		<div class="tab-pane" id="three">
+			<h2>Legal &amp; Licenses</h2>
+			<p>
+				We don’t like to wrangle for or against our clients. We don’t want to be dragged into the murky, unprotected waters of copyright breaches. We are extremely careful about developing genuinely original concepts as per our client’s business requirements.
+			</p>
+			
+			<p>
+				We cannot be inveigled into aping, cloning or copying.
+			</p>
+			
+			<p>
+				We are very careful about using genuine licensed software in the execution of our designs. As a creative fraternity, we like to protect our integrity; uphold our reputation; maintain the solemnity of our client’s trust and can’t be bothered with fighting wasteful legal suits. It’s expensive, both in terms of time and expenditure and just not worth our time, money or creative energy. 
+			</p>
+			<!--<p>
+			# 	Take advantage of our domain expertise in delivering over 300 successful digital products. The time to change is now.
+			# </p> -->
+
+		</div>
+
+
+		<div class="tab-pane" id="four">
+			<h2>Design Process</h2>
+			<p>
+				We choose a novel design process and tailor it to the project as per the client requirement. The design processes we follow helps rectify false assumptions at a very early stage, so there are no cost over-runs in later making product recalls from the market. With our rigorous process-driven approach, we are able to identify and fix problems at the assembly line and send it back to the drawing room for modifications. 
+			</p>
+			<p>We execute every project in four pre-defined phases:</p>
+			<ul>
+				<li>Identify</li>
+				<li>Iterate</li>
+				<li>Refine</li>
+				<li>Execute</li>
+			</ul>
+			
+			<p>
+				This model helps us eliminates chances of failure / bottlenecks in the latter part that can imply huge time and cost overruns for our clients.
+			</p>
+	</div>
+	
+	<div class="tab-pane" id="five">
+		<h2>Design for standards / approval / norms</h2>
+		<p>
+			As per the strategy, positioning and target market, we take care of meeting relevant industry-standards and making the product complaint to all industry norms. We set high standards for our products.
+		</p>
+		<p>
+			We go deeper into a study of all the applicable standards, rules, protocols, industry regulations, approval policy, certification norms etc. before embarking on a design activity. We consider these regulatory elements critical to the success and market acceptability of our design intervention. In addition, we are mindful of the design constraints and chose a unique design process, accordingly. We have experience of compliance with all international benchmarks and standards such as ROHS, IP (International Protection Marking), NABH, NABL, CE etc.
+		</p>
+	
+	</div>
+
+	</div>
+<% end %>
+
+
+
+
+
+<% if @page.title == 'Digital Design'%>
+<div class="digital-page tab-control">
+	<ul class="nav nav-tabs">
+		<li class="active"><a href="#zero" data-toggle="tab"><img src="/assets/ui/1.png"></a></li>
+		<li><a href="#one" data-toggle="tab"><img src="/assets/ui/2.png"></a></li>
+		<li><a href="#two" data-toggle="tab"><img src="/assets/ui/3.png"></a></li>
+		<li><a href="#three" data-toggle="tab"><img src="/assets/ui/4.png"></a></li>
+		<li><a href="#four" data-toggle="tab"><img src="/assets/ui/5.png"></a></li>
+	</ul>
+
+	<!-- Tab panes -->
+	<div class="tab-content">
+		<div class="tab-pane active" id="zero">
+			<h2>Responsive web design<h2>
+			<p>
+				Today, websites are being accessed through multiple devices – phones, tablet, TV, games console, as well as laptops and desktops. Responsive web design ensures that their experience of your brand is the same across these devices, and irrespective of what device a consumer is using to access your content. The buzzword for this is Responsive Web Design (RWD) that saves cost on designing a separate mobile site.
+			</p>
+
+		</div>
+		<div class="tab-pane" id="one">
+			<h2>Web portals design</h2>
+			<p>
+				Uniformly designed web portals provide a consistent look and feel, control and access features for multiple applications and databases that might otherwise have been perceived as separate entities. Cosire creates customized web portals for corporate clients that give them uniform, consistent and attractive brand identity.
+			</p>
+
+		</div>
+		<div class="tab-pane" id="two">
+			<h2>Web / Desktop application design</h2>
+			<p>
+				We design interfaces that can talk, emote and engage your audience. With our strong focus on design and branding elements, we are able to weave key elements of elegance, creativity and ingenuity into your web application. That said, design is just a tool; a means (great user experiences) to an end and not the end itself. Cosire believes in delivering humanizing interfaces. We have a team of brilliant UI designers, who convert our ideas into HTML. Since most app are also being accessed though mobile devices, we develop the front end in mobile responsive HTML 5.
+			</p>
+
+		</div>
+
+		<div class="tab-pane" id="three">
+			<h2>Native application design</h2>
+			<p>
+				At Cosire, we believe that the ultimate media will be mobile media because it’s so close to the user. Wherever he goes, the consumer carries this device with him. We work on mobile interfaces to provide outstanding user experiences (UX). We create UI designs for native mobile applications, including iOS and Android.
+			</p>
+			<!--<p>
+			# 	Take advantage of our domain expertise in delivering over 300 successful digital products. The time to change is now.
+			# </p> -->
+
+		</div>
+
+
+		<div class="tab-pane" id="four">
+			<h2>Design for digital media</h2>
+			<p>
+				In today’s world, the web has evolved into one of the fastest growing giant media platform to engage young consumers. As a technology-driven media, it’s also very effective at creating an instant buzz for your brands. Unlike conventional media, advertisements on web can be closely targeted to your identified customer segments. Cosire has a strong portfolio in designing and delivering digital content and digital artwork, such as newsletters, web banners, web-slideshows to communicate your brand more effectively through this futuristic medium.
+			
+			</p>
+	</div>
+	
+	</div>
+<% end %>
+
+
+
+
+
+
+
+<% if @page.title == 'Space Design'%>
+<div class="space-page tab-control">
+	<ul class="nav nav-tabs">
+		<li class="active"><a href="#zero" data-toggle="tab"><img src="/assets/space/1.png"></a></li>
+		<li><a href="#one" data-toggle="tab"><img src="/assets/space/2.png"></a></li>
+		<li><a href="#two" data-toggle="tab"><img src="/assets/space/3.png"></a></li>
+		<li><a href="#three" data-toggle="tab"><img src="/assets/space/4.png"></a></li>
+		<li><a href="#four" data-toggle="tab"><img src="/assets/space/5.png"></a></li>
+	</ul>
+
+	<!-- Tab panes -->
+	<div class="tab-content">
+		<div class="tab-pane active" id="zero">
+			<h2>Corporate space interior<h2>
+			<p>
+				Cosire has the experience of providing corporate interior design services, thereby creating incredibly stylized, contemporary workspaces for our clients across India. Our thrust is on people and their relationships with their surrounding ethos. Our mission is to help business transform space into productive, engaging and rewarding work environments through the application of ergonomic features and innovative design elements.
+			</p>
+
+		</div>
+		<div class="tab-pane" id="one">
+			<h2>Retail space interior</h2>
+			<p>
+				Cosire can be your forward-thinking, retail interior design partner who can assist you in designing very stylized retail space that capitalizes on the customer experience, while satisfying your unique business, brand and corporate needs and culture. As a business owner, you can rest assured that our interior designers’ team will expertly guide you through the design and implementation process, within budget and on time.
+			</p>
+
+		</div>
+		<div class="tab-pane" id="two">
+			<h2>Residential space interior</h2>
+			<p>
+				Cosire is a full-service, detail-driven, commercial and residential interior design firm committed to delivering personalized service. Our service bouquet covers preliminary design planning and turnkey project management.
+			</p>
+
+		</div>
+		
+		<div class="tab-pane" id="three">
+			<h2>Furniture Design</h2>
+			<p>
+				Ergonomics guides all our furniture designing initiatives. We study the comfort level of the user, before proposing any design intervention because Cosire believes that each furniture piece conceived, designed, and produced should add some measure of good to the world.  This is evident in the exceptional quality of furniture piece and spaces designed by the Cosire team.
+			</p>
+		
+		</div>
+		
+		
+		<div class="tab-pane" id="four">
+			<h2>Exhibition Space Design</h2>
+			<p>
+				We’ve got the perfect blend of creativity, technical know-how and project management expertise to produce stunning Exhibition Stands and Live Events. We derive our inspiration from our client’s specs and in conjunction with our in-house graphics department, workshops and project managers. In the past, we have flawlessly executed some of the most talked-about Exhibitions, Conferences, Product Launches, Road shows and Live Events in our industry. In addition, we can “Brand your Booth” at conferences, exhibitions and trade shows. We also specialize in creating pre-event buzz, banners, standees, planning social media promotions, content generation and appointment setting for your booths.
+			</p>
+		
+		</div>
+
+</div>
+<% end %>
+
+
+
+
+
+
+
+<% if @page.title == 'Packaging Design'%>
+<div class="packaging-page tab-control">
+	<ul class="nav nav-tabs">
+		<li class="active"><a href="#zero" data-toggle="tab"><img src="/assets/packaging/1.png"></a></li>
+		<li><a href="#one" data-toggle="tab"><img src="/assets/packaging/2.png"></a></li>
+		<li><a href="#two" data-toggle="tab"><img src="/assets/packaging/3.png"></a></li>
+	</ul>
+
+	<!-- Tab panes -->
+	<div class="tab-content">
+		<div class="tab-pane active" id="zero">
+			<h2>Packaging design for FMCG<h2>
+			<p>
+				For FMCG brands, like a shampoo or a soap, or an impulse purchase product like a finger snack, packaging design is often more important than the contents of the package. It has to be unusually attractive for it to be picked up.
+			</p>
+		
+		</div>
+		<div class="tab-pane" id="one">
+			<h2>Creative / conceptual packaging design</h2>
+			<p>
+				In our understanding, packing is not just a wrap. It has many conventional and unconventional uses and indeed conceived creatively, it can wrap up many potential benefits for a client. - Breakthrough creative packaging can bring about a significant reduction in transportation cost, transform a retail display method, enhance a product’s appeal, brand recall, perceived value to a customer etc.
+			</p>
+			
+		</div>
+		<div class="tab-pane" id="two">
+			<h2>Packaging graphic</h2>
+			<p>
+				Design and packaging complement each other because the first sale is mostly determined by the visual effect it produces on the consumer mind. If it looks professional and visually pleasing it’s most likely a sale.
+			</p>
+
+		</div>
+
+</div>
+<% end %>
+
+
+
+
+
+
+
+
+
+
+
+<% if @page.title == 'Brand Design'%>
+<div class="brand-page tab-control">
+	<ul class="nav nav-tabs">
+		<li class="active"><a href="#zero" data-toggle="tab"><img src="/assets/branding/1.png"></a></li>
+		<li><a href="#one" data-toggle="tab"><img src="/assets/branding/2.png"></a></li>
+		<li><a href="#two" data-toggle="tab"><img src="/assets/branding/3.png"></a></li>
+		<li><a href="#three" data-toggle="tab"><img src="/assets/branding/4.png"></a></li>
+	</ul>
+
+	<!-- Tab panes -->
+	<div class="tab-content">
+		<div class="tab-pane active" id="zero">
+			<h2>Identity design and visual language<h2>
+			<p>
+				Cosire’s definition of a successful identity design is giving an unambiguous ‘character’ to a brand in terms of the way it is perceived with the prospects. It’s about forming a strong, emotive link between the brand and its customers.
+			</p>
+			<p>
+			Having a uniform design identity is very important for the positioning of a brand in a non-differentiated, cluttered marketplace. Identity speaks a lot about your brand. If your identity is not telling a compelling story to your targets, it’s not an identity. It just won’t work. 
+			</p>
+		</div>
+		<div class="tab-pane" id="one">
+			<h2>Creative brand write-­up</h2>
+			<p>
+				A picture can say a thousand words but these days, if those words have also been optimized for search engines (SEO), it can also come up top on Google search results. Cosire can help you write key word rich content that pitches your business like nothing else can. Need copy for your brochure or newsletter? Need to issue a media release? Our team can help you with content that effectively sells your services.
+			</p>
+			<p>
+				At Cosire, we believe that content is a shadow of your brand. It reflects your character, your DNA, philosophy, ideology, moral values and more. Indeed creative, original brand content has equal leverage as other design elements, such as photography and identity, among other things.
+			</p>
+		</div>
+		<div class="tab-pane" id="two">
+			<h2>Designing for the print media</h2>
+			<p>
+				Whether it’s your annual report, calendar, a prospectus, a business card or a flier, the aim is to create something that is at once visually attractive and informative. A calendar for instance must be so attractive that it doesn’t get removed from the CEO’s desk long after the year has come to a wind. Our print design services include catalogue, calendar, brochures, magazine/newspaper ads, banners, marketing collaterals etc.
+			</p>
+			
+			<p>
+				While abroad, print may be a dying medium, in India, starting from a lower base, it’s still alive and kicking. We breathe more life into it with our happening design interventions, tailored of course to your choice of the distribution medium and the target audience.
+			</p>
+
+		</div>
+		
+		<div class="tab-pane" id="three">
+			<h2>Creative Visual Media</h2>
+			<h4>Brand Photography</h4>
+			<p>
+				Every brand tells a story. If people don’t like what they see, they won’t spend their money on your brand. Capturing an image of your brand that presents it in the most flattering way is an art. Luckily, we have mastered that art form. Our in-house photographers are vaunted amongst the finest in India, and whether they’re shooting on digital or film, they won’t stop until they’ve got the image that grabs attention and propels people into buying your brand.
+			</p>
+			
+			<h4>Corporate film</h4>
+			<p>
+				Did you know that last year, video was the most popular media format? Busy professionals have very little time to spend on your website, brochure or email to look up the information they need. Video saves enormous amount of time and is more effective as well. Videos can also go viral in no time. It’s the quickest way of communicating with your targets than a brochure or a flier. The Cosire team can guide you through the video production process; from planning and scripting to delivering a finished product you’ll be proud to present to your business associates.
+			</p>
+			
+			<h4>Illustrations / character design / animation</h4>
+			<p>
+				We excel in creating stunning 3D illustration, CGI animation, VFX, retouching, modeling and character creation. Covering a broad range of styles and media, our artists are ready to respond to your brief with imagination, creativity and a rare touch of humor.
+			</p>
+		
+		</div>
+
+</div>
+<% end %>
+
+
+
+
+
+
+
+
+
+
+
+<% if @page.title == 'Strategy Design'%>
+<div class="strategy-page tab-control">
+	<ul class="nav nav-tabs">
+		<li class="active"><a href="#zero" data-toggle="tab"><img src="/assets/stratagy/1.png"></a></li>
+		<li><a href="#one" data-toggle="tab"><img src="/assets/stratagy/2.png"></a></li>
+		<li><a href="#two" data-toggle="tab"><img src="/assets/stratagy/3.png"></a></li>
+	</ul>
+
+	<!-- Tab panes -->
+	<div class="tab-content">
+		<div class="tab-pane active" id="zero">
+			<h2>Brand strategy design for B2B / B2C<h2>
+			<p>
+				Brand strategy lies at the core of brand management. Without valid strategies, it is difficult to manage a sensitive asset called a “Brand”. A well strategized brand has certain Dos and DONTs kind of powerful guidelines that it must uphold at all times, and in the face of every market challenge. We devise such strategies for clients.  </p>
+				<p>In addition, we translate Brand Strategy into verbal and visual expressions, from corporate identity to digital, physical, and holistic experiences for the customers.We develop digital roadmaps, help to develop and test brand strategy, define and create new user experience (UX), and develop interactive designs. We are experts at building well-differentiated B2B and B2C brand strategies.
+			</p>
+		</div>
+		<div class="tab-pane" id="one">
+			<h2>Brand strategy for market positioning</h2>
+			<p>
+				All over the world, marketers contemplate strategies to differentiate existing products and services from new ones.
+			</p>
+			<ul>
+				<li>What is your positioning?</li>
+				<li>What makes you unique?</li>
+				<li>Who do you want to connect with and how?</li>
+				<li>How do you plan to enter a cluttered marketplace? </li>
+				<li>Where will you spend your marketing budget?</li>
+				<li>On what media channels?</li>
+				<li>How will you measure success?</li>
+			</ul>
+			<p>
+				Cosire starts with a strategy so that everything we do for you and your brand has a definite purpose. We help marketers ideate and differentiate.
+			</p>
+		</div>
+		<div class="tab-pane" id="two">
+			<h2>Service / System Design</h2>
+			<p>
+				Service design is all about creating great user experiences. This is quite different from creating new product. Service design is about giving users an unforgettable experience with a brand. The experience is strong, positive and moving so as to create a lasting bond with the brand. This is the power of service design – with its symbolism and metaphors it establishes a powerful, emotional connect with the customer. It’s that aspect of the brand that dreams visualizes and plays.
+			</p>
+			
+		</div>
+
+</div>
+<% end %>
+
+
+
+
+
+
+
+
+
 <% if @page.title == 'Product Designing'%>
+<div class="product-page tab-control">
 	<ul class="nav nav-tabs">
 		<li class="active"><a href="#zero" data-toggle="tab"><img src="/assets/product/1.png"></a></li>
 		<li><a href="#one" data-toggle="tab"><img src="/assets/product/2.png"></a></li>
