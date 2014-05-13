@@ -21,7 +21,7 @@ Refinery::PagesController.class_eval do
 		end
 		
 		def find_all_teammembers
-			@teammembers ||= ::Refinery::Teammembers::Teammember.all.order(created_at: :asc)
+			@teammembers ||= ::Refinery::Teammembers::Teammember.all
 		end
 		
 		def find_all_boas
