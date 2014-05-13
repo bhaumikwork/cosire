@@ -56,19 +56,31 @@ $( document ).ready(function() {
 	
 	$('.team .team-profiles .photo').on('mouseenter','div.normal-image',function() {
 			$(this).css({
-				'visibility': 'hidden', 
-				'transition': 'visibility 5s fade'});
+				
+				'visibility': 'hidden'
+			});
 			$(this).siblings().css({
-				visibility: 'visible', 
-				transition: 'visibility 5s fade'});
+				
+				visibility: 'visible'
+				}).fadeIn("slow");
 	}).on('mouseleave', 'div.hover-image' ,function() {
 			$(this).css({
-				'visibility': 'hidden', 
-				'transition': 'visibility 5s fade'});
+				
+				'visibility': 'hidden'
+			});
 			$(this).siblings().css({
-				visibility: 'visible', 
-				transition: 'visibility 5s fade'});
+				
+				visibility: 'visible'
+				}).fadeIn("slow");
 	});
 		
+		
+	$('#container').on('mouseenter','div.photo-1',function() {
+			$(this).css('visibility', 'hidden');
+			$(this).siblings().css('visibility', 'visible').fadeIn(5000);
+	}).on('mouseleave', 'div.photo-2' ,function() {
+			$(this).css('visibility', 'hidden');
+			$(this).siblings().css('visibility', 'visible').fadeIn(5000);
+	});
 
 });

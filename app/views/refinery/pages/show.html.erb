@@ -200,39 +200,72 @@ doing.</p>
  		</ul>
  </section> <!-- #options -->
 
-<div id="container" class="clearfix">
-	
+<div id="container" class="clearfix" class="container">
+
 	<% @industries.each do |industry| %>
-	<div class="item industrial" data-category="industrial">
-			<%= link_to industry.title, refinery.industries_industry_path(industry) %>
-			<%= image_fu industry.profile, "300x300" %>
-			<%= image_fu industry.hover_image, "300x300" %>
-	</div>
+		
+		<div class="item industrial col-md-3" data-category="industrial">
+			
+			<div class="photo-1">
+				<%= image_fu industry.profile, "300x300" %>
+			</div>
+			
+			<div class="photo-2">
+				<%= image_fu industry.hover_image, "300x300" %>
+			</div>
+			
+		</div>
+	
 	<% end %>
 	
 	<% @brands.each do |brand| %>
-	<div class="item brand" data-category="brand">
-			<%= link_to brand.title, refinery.brands_brand_path(brand) %>
-			<%= image_fu brand.profile, "300x300" %>
-			<%= image_fu brand.hover_image, "300x300" %>
-	</div>
+		
+		<div class="item brand col-md-3" data-category="brand">
+		
+			<div class="photo-1">
+				<%= image_fu brand.profile, "300x300" %>
+			</div>
+			<div class="photo-2">
+				<%= image_fu brand.hover_image, "300x300" %>
+			</div>
+			
+
+		</div>
+	
 	<% end %>
 	
 	<% @spaces.each do |space| %>
-	<div class="item space" data-category="space">
-			<%= link_to space.title, refinery.spaces_space_path(space) %>
-			<%= image_fu space.profile, "300x300" %>
-			<%= image_fu space.hover_image, "300x300" %>
-	</div>
+		
+		<div class="item space col-md-3" data-category="space">
+		
+			<div class="photo-1">
+				<%= image_fu space.profile, "300x300" %>	
+			</div>
+			<div class="photo-2">
+				<%= image_fu space.hover_image, "300x300" %>	
+			</div>
+			
+			
+		</div>
+	
 	<% end %>
 
 	<% @interactions.each do |interaction| %>
-	<div class="item interaction" data-category="interaction">
-			<%= link_to interaction.title, refinery.interactions_interaction_path(interaction) %>
-			<%= image_fu interaction.profile, "300x300" %>
-			<%= image_fu interaction.hover_image, "300x300" %>
-	</div>
+
+		<div class="item interaction col-md-3" data-category="interaction">
+		
+			<div class="photo-1">
+				<%= image_fu interaction.profile, "300x300" %>	
+			</div>
+			<div class="photo-2">
+				<%= image_fu interaction.hover_image, "300x300" %>	
+			</div>
+			
+			
+		</div>
+
 	<% end %>
-</div>
+	</div>
+
 
 <% end %>
