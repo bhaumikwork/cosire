@@ -73,14 +73,26 @@ $( document ).ready(function() {
 				visibility: 'visible'
 				}).fadeIn("slow");
 	});
-		
-		
+	
 	$('#container').on('mouseenter','div.photo-1',function() {
-			$(this).css('visibility', 'hidden');
-			$(this).siblings().css('visibility', 'visible').fadeIn(5000);
+			$(this).css({
+				
+				'visibility': 'hidden'
+			});
+			$(this).siblings().css({
+				
+				visibility: 'visible'
+				}).fadeIn("slow");
 	}).on('mouseleave', 'div.photo-2' ,function() {
-			$(this).css('visibility', 'hidden');
-			$(this).siblings().css('visibility', 'visible').fadeIn(5000);
+			$(this).css({
+				
+				'visibility': 'hidden'
+			});
+			$(this).siblings().css({
+				
+				visibility: 'visible'
+				}).fadeIn("slow");
 	});
+		
 
 });
