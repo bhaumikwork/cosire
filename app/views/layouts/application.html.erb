@@ -264,6 +264,32 @@
 
 
 		});
+		
+		$( document ).ready(function() {
+		
+			$('#container').on('mouseenter','div.photo-1',function() {
+					$(this).css({
+		
+						'visibility': 'hidden'
+					});
+					$(this).siblings().css({
+		
+						visibility: 'visible'
+						}).fadeIn("slow");
+			}).on('mouseleave', 'div.photo-2' ,function() {
+					$(this).css({
+		
+						'visibility': 'hidden'
+					});
+					$(this).siblings().css({
+		
+						visibility: 'visible'
+						}).fadeIn("slow");
+			});
+		
+		
+		});
+
 </script>
 </body>
 </html>
