@@ -31,23 +31,20 @@
 					<p><%=raw startup.description %></p>
 				</div>
 		</div>
-		<% next teammember %>
+		<% next startup %>
 
 		<div class="col-md-6 team-member">
 				<div class="photo col-md-4">
-
-					<div  class="hover-image">	
-						<%= image_fu teammember.hover_image, "160x200" %>
-					</div>
+		
 					<div class="normal-image">
-						<%= image_fu teammember.profile, "160x200" %>
+						<%= image_fu startup.profile, "160x200" %>
 					</div>
 				</div>
-
+		
 				<div class="profile col-md-8">
-					<h3><%=raw teammember.name %></h3>
-					<p class="designation"><%=raw teammember.designation %></p>
-					<p><%=raw teammember.description %></p>
+					<h3><%=raw startup.title %></h3>
+					<p class="designation"><%=raw startup.oneliner %></p>
+					<p><%=raw startup.description %></p>
 				</div>
 		</div>
 
