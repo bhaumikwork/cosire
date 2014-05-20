@@ -21,7 +21,7 @@ Refinery::PagesController.class_eval do
 		end
 		
 		def find_all_brands
-			@brands ||= ::Refinery::Projects::Project.where('work_category LIKE ?', '%brand%').order('position ASC')
+			@brands ||= ::Refinery::Projects::Project.where('work_category LIKE ?', '%branding%').order('position ASC')
 		end
 		
 		def find_all_selfs
