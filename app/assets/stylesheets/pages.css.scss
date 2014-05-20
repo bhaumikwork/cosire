@@ -196,6 +196,14 @@
 		// border-bottom-color: transparent;
 		// outline: 0 !important;
 		margin-right: 20px;
+		
+		img {
+			-webkit-transform: scale(0.9);
+			-moz-transform:    scale(0.9);
+			-ms-transform:     scale(0.9);
+			-o-transform:      scale(0.9);
+			transform:         scale(0.9); 
+		}
 	}
 	
 	ul.nav-tabs li:hover {
@@ -205,11 +213,11 @@
 			filter: grayscale(0%);
 			
 			
-			-webkit-transform: scale(1.1);
-			-moz-transform:    scale(1.1);
-			-ms-transform:     scale(1.1);
-			-o-transform:      scale(1.1);
-			transform:         scale(1.1);
+			-webkit-transform: scale(1);
+			-moz-transform:    scale(1);
+			-ms-transform:     scale(1);
+			-o-transform:      scale(1);
+			transform:         scale(1);
 			
 		}
 	}
@@ -218,6 +226,11 @@
 		// border: none !important;
 		// border-bottom-color: transparent;
 		// outline: 0 !important;
+		-webkit-transform: scale(1);
+		-moz-transform:    scale(1);
+		-ms-transform:     scale(1);
+		-o-transform:      scale(1);
+		transform:         scale(1);
 	}
 	
 	ul.nav-tabs li a{
@@ -241,6 +254,11 @@
 			-webkit-filter: grayscale(0%);
 			-moz-filter: grayscale(0%);
 			filter: grayscale(0%);
+			-webkit-transform: scale(1);
+			-moz-transform:    scale(1);
+			-ms-transform:     scale(1);
+			-o-transform:      scale(1);
+			transform:         scale(1);
 		}
 	}
 
