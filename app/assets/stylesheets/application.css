@@ -63,13 +63,13 @@ p, .page li, .tab-control li {
 
 /* Logo */
 .logo {
-  margin-top: 10px;
+  margin-top: 15px;
   height: 50px;
   margin-left: -15px;
 }
 
 .logo img {
-  height: 60px;
+  height: 55px;
 
 }
 
@@ -297,7 +297,12 @@ hr.front-line {
 .carousel .next {left:0 !important;opacity:1 !important;z-index:1 !important;}
 
 .carousel-indicators {
-  
+  width: 78% !important;
+  bottom: 4px !important;
+}
+
+.carousel-indicators li{
+  float: right;
 }
 
 ol.breadcrumb {
