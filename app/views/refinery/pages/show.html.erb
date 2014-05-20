@@ -1,4 +1,153 @@
-<h2><%= @page.title %></h2>
+<% if @page.title == 'About'%>
+<ol class="breadcrumb">
+	<li><a href="/">Home</a></li>
+	<li class="active">About</li>
+</ol>
+<% end %>
+
+<% if @page.title == 'Vision'%>
+<ol class="breadcrumb">
+	<li><a href="/">Home</a></li>
+	<li class="active">Vision</li>
+</ol>
+<% end %>
+
+<% if @page.title == 'Approach'%>
+<ol class="breadcrumb">
+	<li><a href="/">Home</a></li>
+	<li class="active">Approach</li>
+</ol>
+<% end %>
+
+<% if @page.title == 'Who we are'%>
+<ol class="breadcrumb">
+	<li><a href="/">Home</a></li>
+	<li class="active">Who we are</li>
+</ol>
+<% end %>
+
+<% if @page.title == 'Design Process'%>
+<ol class="breadcrumb">
+	<li><a href="/">Home</a></li>
+	<li class="active">Design Process</li>
+</ol>
+<% end %>
+
+<% if @page.title == 'Team'%>
+<ol class="breadcrumb">
+	<li><a href="/">Home</a></li>
+	<li class="active">Team</li>
+</ol>
+<% end %>
+
+<% if @page.title == 'Clients'%>
+<ol class="breadcrumb">
+	<li><a href="/">Home</a></li>
+	<li class="active">Clients</li>
+</ol>
+<% end %>
+
+<% if @page.title == 'Associates'%>
+<ol class="breadcrumb">
+	<li><a href="/">Home</a></li>
+	<li class="active">Associates</li>
+</ol>
+<% end %>
+
+<% if @page.title == 'Startups'%>
+<ol class="breadcrumb">
+	<li><a href="/">Home</a></li>
+	<li class="active">Startups</li>
+</ol>
+<% end %>
+
+<% if @page.title == 'Achievements'%>
+<ol class="breadcrumb">
+	<li><a href="/">Home</a></li>
+	<li class="active">Achievements</li>
+</ol>
+<% end %>
+
+<% if @page.title == 'Intellectual Properties'%>
+<ol class="breadcrumb">
+	<li><a href="/">Home</a></li>
+	<li class="active">Intellectual Properties</li>
+</ol>
+<% end %>
+
+
+<% if @page.title == 'Services'%>
+<ol class="breadcrumb">
+	<li><a href="/">Home</a></li>
+	<li class="active">Services</li>
+</ol>
+<% end %>
+
+<% if @page.title == 'Product Designing'%>
+<ol class="breadcrumb">
+	<li><a href="/">Home</a></li>
+	<li><a href="/services">Services</a></li>
+	<li class="active">Product Designing</li>
+</ol>
+<% end %>
+
+<% if @page.title == 'Strategy Design'%>
+<ol class="breadcrumb">
+	<li><a href="/">Home</a></li>
+	<li><a href="/services">Services</a></li>
+	<li class="active">Strategy Design</li>
+</ol>
+<% end %>
+
+<% if @page.title == 'Brand Design'%>
+<ol class="breadcrumb">
+	<li><a href="/">Home</a></li>
+	<li><a href="/services">Services</a></li>
+	<li class="active">Brand Design</li>
+</ol>
+<% end %>
+
+<% if @page.title == 'Packaging Design'%>
+<ol class="breadcrumb">
+	<li><a href="/">Home</a></li>
+	<li><a href="/services">Services</a></li>
+	<li class="active">Packaging Design</li>
+</ol>
+<% end %>
+
+<% if @page.title == 'Space Design'%>
+<ol class="breadcrumb">
+	<li><a href="/">Home</a></li>
+	<li><a href="/services">Services</a></li>
+	<li class="active">Space Design</li>
+</ol>
+<% end %>
+
+<% if @page.title == 'Digital Design'%>
+<ol class="breadcrumb">
+	<li><a href="/">Home</a></li>
+	<li><a href="/services">Services</a></li>
+	<li class="active">Digital Design</li>
+</ol>
+<% end %>
+
+<% if @page.title == 'Work'%>
+<ol class="breadcrumb">
+	<li><a href="/">Home</a></li>
+	<li class="active">Work</li>
+</ol>
+<% end %>
+
+<% if @page.title == 'Why Cosire'%>
+<%= request.fullpath %>
+<ol class="breadcrumb">
+	<li><a href="/">Home</a></li>
+	<li class="active">Why Cosire</li>
+</ol>
+<% end %>
+
+
+
 
 <div class="banner"><%=raw @page.content_for(:banner) %></div>
 <div class="page">
