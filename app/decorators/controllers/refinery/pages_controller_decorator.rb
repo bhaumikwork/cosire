@@ -5,7 +5,7 @@ Refinery::PagesController.class_eval do
 	protected
 	
 		def find_all_products
-			@products ||= ::Refinery::Projects::Project.all
+			@products ||= ::Refinery::Projects::Project.order('position ASC')
 		end
 	
 		def find_all_industries
