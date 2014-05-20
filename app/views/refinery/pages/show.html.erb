@@ -6,6 +6,58 @@
 </div>
 
 
+<% if @page.title == 'Achievements'%>
+<hr>
+<div class="ips">
+<div class="row">
+
+
+<h2>Achievements</h2>
+<div class="team-profiles">
+	<% @achievements.each do |achievement| %>
+
+		<div class="col-md-6 team-member">
+				<div class="photo col-md-4">
+
+					<div class="normal-image">
+						<%= image_fu achievement.profile, "160x200" %>
+					</div>
+				</div>
+
+				<div class="profile col-md-8">
+					<h3><%=raw achievement.title %></h3>
+
+					<p><%=raw achievement.description %></p>
+				</div>
+		</div>
+		<% next achievement %>
+
+		<div class="col-md-6 team-member">
+				<div class="photo col-md-4">
+
+					<div class="normal-image">
+						<%= image_fu achievement.profile, "160x200" %>
+					</div>
+				</div>
+
+				<div class="profile col-md-8">
+					<h3><%=raw achievement.title %></h3>
+
+					<p><%=raw achievement.description %></p>
+				</div>
+		</div>
+
+	<% end %>
+	</div>
+	</div>
+</div>
+
+<% end %>
+
+
+
+
+
 <% if @page.title == 'Intellectual Properties'%>
 <hr>
 <div class="ips">

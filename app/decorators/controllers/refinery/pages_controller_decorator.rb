@@ -1,6 +1,6 @@
 Refinery::PagesController.class_eval do
 	
-	before_filter :find_all_teammembers, :find_all_boas, :find_all_blocks, :find_all_industries, :find_all_spaces, :find_all_digitals, :find_all_brands, :find_all_selfs, :find_all_products, :find_all_startups, :find_all_ips
+	before_filter :find_all_teammembers, :find_all_boas, :find_all_blocks, :find_all_industries, :find_all_spaces, :find_all_digitals, :find_all_brands, :find_all_selfs, :find_all_products, :find_all_startups, :find_all_ips, :find_all_achievements
 	
 	protected
 	
@@ -35,6 +35,10 @@ Refinery::PagesController.class_eval do
 		
 		def find_all_ips
 			@ips ||= ::Refinery::Ips::Ip.order('position ASC')
+		end
+		
+		def find_all_achievements
+			@ips ||= ::Refinery::Achievements::Achievement.order('position ASC')
 		end
 		
 		
