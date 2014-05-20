@@ -225,12 +225,13 @@
 		$(function(){
 
 			var $container = $('#container');
-
+			$container.isotope({ filter: '.all' });
+			
 			$container.isotope({
 				itemSelector : '.item'
 			});
 
-
+			
 			var $optionSets = $('#options .option-set'),
 					$optionLinks = $optionSets.find('a');
 
@@ -289,6 +290,8 @@
 		
 		
 		});
+		
+		
 
 </script>
 </body>

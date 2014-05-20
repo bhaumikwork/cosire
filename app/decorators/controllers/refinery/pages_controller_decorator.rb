@@ -1,31 +1,41 @@
 Refinery::PagesController.class_eval do
 	
-	before_filter :find_all_industries, :find_all_spaces, :find_all_interactions, :find_all_brands, :find_all_teammembers, :find_all_boas, :find_all_blocks
+	before_filter :find_all_teammembers, :find_all_boas, :find_all_blocks, :find_all_industries, :find_all_spaces, :find_all_digitals, :find_all_brands, :find_all_selfs, :find_all_products
 	
 	protected
 	
+		def find_all_products
+			@products ||= ::Refinery::Projects::Project.all
+		end
+	
 		def find_all_industries
-			@industries ||= ::Refinery::Industries::Industry.all
+			@industries ||= ::Refinery::Projects::Project.where('work_category LIKE ?', '%industry%').all
 		end
 		
 		def find_all_spaces
-			@spaces ||= ::Refinery::Spaces::Space.all
+			@spaces ||= ::Refinery::Projects::Project.where('work_category LIKE ?', '%space%').all
 		end
 		
-		def find_all_interactions
-			@interactions ||= ::Refinery::Interactions::Interaction.all
+		def find_all_digitals
+			@digitals ||= ::Refinery::Projects::Project.where('work_category LIKE ?', '%digital%').all
 		end
 		
 		def find_all_brands
-			@brands ||= ::Refinery::Brands::Brand.all
+			@brands ||= ::Refinery::Projects::Project.where('work_category LIKE ?', '%brand%').all
 		end
 		
+		def find_all_selfs
+			@selfs ||= ::Refinery::Projects::Project.where('work_category LIKE ?', '%self%').all
+		end
+		
+		
+		
 		def find_all_teammembers
-			@teammembers ||= ::Refinery::Teammembers::Teammember.all
+			@teammembers ||= ::Refinery::Teammembers::Teammember.order('position ASC')
 		end
 		
 		def find_all_boas
-			@boas ||= ::Refinery::Boas::Boa.all
+			@boas ||= ::Refinery::Boas::Boa.order('position ASC')
 		end
 		
 		def find_all_blocks

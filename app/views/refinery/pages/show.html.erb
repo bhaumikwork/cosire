@@ -695,81 +695,86 @@ doing.</p>
 
  <section id="options" class="clearfix">
  		<ul id="filters" class="option-set clearfix options" data-option-key="filter">
- 			<li><a href="#filter" data-option-value="*" class="selected">All</a></li>
- 			<li><a href="#filter" data-option-value=".industrial">Industrial</a></li>
+ 			<li><a href="#all" data-option-value=".all" class="selected">All</a></li>
+ 			<li><a href="#filter" data-option-value=".industrial">Product</a></li>
  			<li><a href="#filter" data-option-value=".brand">Branding</a></li>
- 			<li><a href="#filter" data-option-value=".interaction">Interaction</a></li>
+ 			<li><a href="#filter" data-option-value=".interaction">Digital</a></li>
  			<li><a href="#filter" data-option-value=".space">Space</a></li>
+ 			<li><a href="#filter" data-option-value=".self">Self Initiative</a></li>
  			
  		</ul>
  </section> <!-- #options -->
 
 <div id="container" class="clearfix" class="container">
 
-	<% @industries.each do |industry| %>
-		
-		<div class="item industrial col-md-3" data-category="industrial">
-			
+	<% @products.each do |product| %>		
+		<div class="item all col-md-3" data-category="all">			
+			<div class="photo-1">
+				<%= image_fu product.profile, "235x235" %>
+			</div>			
+			<div class="photo-2">
+				<%= image_fu product.hover_image, "235x235" %>
+			</div>			
+		</div>	
+	<% end %>
+
+
+	<% @industries.each do |industry| %>		
+		<div class="item industrial col-md-3" data-category="industrial">			
 			<div class="photo-1">
 				<%= image_fu industry.profile, "235x235" %>
-			</div>
-			
+			</div>			
 			<div class="photo-2">
 				<%= image_fu industry.hover_image, "235x235" %>
-			</div>
-			
-		</div>
-	
+			</div>			
+		</div>	
 	<% end %>
 	
-	<% @brands.each do |brand| %>
-		
-		<div class="item brand col-md-3" data-category="brand">
-		
+	<% @spaces.each do |space| %>		
+		<div class="item space col-md-3" data-category="space">			
+			<div class="photo-1">
+				<%= image_fu space.profile, "235x235" %>
+			</div>			
+			<div class="photo-2">
+				<%= image_fu space.hover_image, "235x235" %>
+			</div>			
+		</div>	
+	<% end %>
+	
+	
+	<% @digitals.each do |digital| %>		
+		<div class="item interaction col-md-3" data-category="interaction">			
+			<div class="photo-1">
+				<%= image_fu digital.profile, "235x235" %>
+			</div>			
+			<div class="photo-2">
+				<%= image_fu digital.hover_image, "235x235" %>
+			</div>			
+		</div>	
+	<% end %>
+	
+	<% @brands.each do |brand| %>		
+		<div class="item brand col-md-3" data-category="brand">			
 			<div class="photo-1">
 				<%= image_fu brand.profile, "235x235" %>
-			</div>
+			</div>			
 			<div class="photo-2">
 				<%= image_fu brand.hover_image, "235x235" %>
-			</div>
-			
-
-		</div>
-	
+			</div>			
+		</div>	
 	<% end %>
 	
-	<% @spaces.each do |space| %>
-		
-		<div class="item space col-md-3" data-category="space">
-		
+	<% @selfs.each do |s| %>		
+		<div class="item self col-md-3" data-category="self">			
 			<div class="photo-1">
-				<%= image_fu space.profile, "235x235" %>	
-			</div>
+				<%= image_fu s.profile, "235x235" %>
+			</div>			
 			<div class="photo-2">
-				<%= image_fu space.hover_image, "235x235" %>	
-			</div>
-			
-			
-		</div>
-	
+				<%= image_fu s.hover_image, "235x235" %>
+			</div>			
+		</div>	
 	<% end %>
 
-	<% @interactions.each do |interaction| %>
-
-		<div class="item interaction col-md-3" data-category="interaction">
-		
-			<div class="photo-1">
-				<%= image_fu interaction.profile, "235x235" %>	
-			</div>
-			<div class="photo-2">
-				<%= image_fu interaction.hover_image, "235x235" %>	
-			</div>
-			
-			
-		</div>
-
-	<% end %>
-	</div>
 
 
 <% end %>

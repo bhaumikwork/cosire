@@ -15,6 +15,8 @@ PATH
       refinerycms-core (~> 2.1.2)
     refinerycms-ips (1.0)
       refinerycms-core (~> 2.1.2)
+    refinerycms-projects (1.0)
+      refinerycms-core (~> 2.1.2)
     refinerycms-spaces (1.0)
       refinerycms-core (~> 2.1.2)
     refinerycms-startups (1.0)
@@ -246,6 +248,7 @@ DEPENDENCIES
   refinerycms-inquiries (~> 2.1.0)
   refinerycms-interactions!
   refinerycms-ips!
+  refinerycms-projects!
   refinerycms-spaces!
   refinerycms-startups!
   refinerycms-teammembers!

@@ -60,3 +60,6 @@ Refinery::Achievements::Engine.load_seed
 
 # Added by Refinery CMS Ips extension
 Refinery::Ips::Engine.load_seed
+
+# Added by Refinery CMS Projects extension
+Refinery::Projects::Engine.load_seed
