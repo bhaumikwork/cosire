@@ -38,7 +38,7 @@ Refinery::PagesController.class_eval do
 		end
 		
 		def find_all_achievements
-			@ips ||= ::Refinery::Achievements::Achievement.order('position ASC')
+			@achievements ||= ::Refinery::Achievements::Achievement.order('position ASC')
 		end
 		
 		
