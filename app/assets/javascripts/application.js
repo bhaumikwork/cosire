@@ -17,6 +17,25 @@
 
 
 $( document ).ready(function() {
+	
+	$(window).scroll(function(){
+		if($(window).scrollTop() >= $('.navbar').outerHeight() / 2) {
+		// put content here for if the page has scrolled 200 pixels
+			$('.logo img').addClass("small-logo");
+			$('ul.navbar-nav').addClass("small-nav");
+			$('.navbar').addClass('trans-nav');
+		}
+		
+		if($(window).scrollTop() <= $('.navbar').outerHeight() / 2) {
+			// put content here for if the page has scrolled 200 pixels
+				$('.logo img').removeClass("small-logo");
+				$('ul.navbar-nav').removeClass("small-nav");
+				$('.navbar').removeClass('trans-nav');
+			}
+		
+	});
+	
+	
 	n = $('div.banner img').size();
 	
 	if (n == 1){
