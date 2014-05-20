@@ -1,6 +1,6 @@
 Refinery::PagesController.class_eval do
 	
-	before_filter :find_all_teammembers, :find_all_boas, :find_all_blocks, :find_all_industries, :find_all_spaces, :find_all_digitals, :find_all_brands, :find_all_selfs, :find_all_products
+	before_filter :find_all_teammembers, :find_all_boas, :find_all_blocks, :find_all_industries, :find_all_spaces, :find_all_digitals, :find_all_brands, :find_all_selfs, :find_all_products, :find_all_startups
 	
 	protected
 	
@@ -28,6 +28,10 @@ Refinery::PagesController.class_eval do
 			@selfs ||= ::Refinery::Projects::Project.where('work_category LIKE ?', '%self%').order('position ASC')
 		end
 		
+		
+		def find_all_startups
+			@startups ||= ::Refinery::Startups::Startup.order('position ASC')
+		end
 		
 		
 		def find_all_teammembers

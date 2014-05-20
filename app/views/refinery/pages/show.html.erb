@@ -7,6 +7,62 @@
 
 
 
+<% if @page.title == 'Startups'%>
+<hr>
+<div class="startups">
+<div class="row">
+
+
+<h2>Startups</h2>
+<div class="team-profiles">
+	<% @startups.each do |startup| %>
+
+		<div class="col-md-6 team-member">
+				<div class="photo col-md-4">
+
+					<div class="normal-image">
+						<%= image_fu startup.profile, "160x200" %>
+					</div>
+				</div>
+
+				<div class="profile col-md-8">
+					<h3><%=raw startup.title %></h3>
+					<p class="designation"><%=raw startup.oneliner %></p>
+					<p><%=raw startup.description %></p>
+				</div>
+		</div>
+		<% next teammember %>
+
+		<div class="col-md-6 team-member">
+				<div class="photo col-md-4">
+
+					<div  class="hover-image">	
+						<%= image_fu teammember.hover_image, "160x200" %>
+					</div>
+					<div class="normal-image">
+						<%= image_fu teammember.profile, "160x200" %>
+					</div>
+				</div>
+
+				<div class="profile col-md-8">
+					<h3><%=raw teammember.name %></h3>
+					<p class="designation"><%=raw teammember.designation %></p>
+					<p><%=raw teammember.description %></p>
+				</div>
+		</div>
+
+	<% end %>
+	</div>
+	</div>
+</div>
+
+<% end %>
+
+
+
+
+
+
 
 <% if @page.title == 'Why Cosire'%>
 <div class="why-page tab-control">
