@@ -200,7 +200,13 @@
 			-moz-filter: grayscale(0%);
 			filter: grayscale(0%);
 			
+			
 			-webkit-transform: scale(1.1);
+			-moz-transform:    scale(1.1);
+			-ms-transform:     scale(1.1);
+			-o-transform:      scale(1.1);
+			transform:         scale(1.1);
+			
 		}
 	}
 	
@@ -217,9 +223,7 @@
 		// outline: 0 !important;
 		
 		img {
-			-webkit-filter: grayscale(100%);
-			-moz-filter: grayscale(100%);
-			filter: grayscale(100%);
+			
 		}
 	}
 	
