@@ -139,10 +139,18 @@
 <% end %>
 
 <% if @page.title == 'Why Cosire'%>
-<%= request.fullpath %>
+
 <ol class="breadcrumb">
 	<li><a href="/">Home</a></li>
 	<li class="active">Why Cosire</li>
+</ol>
+<% end %>
+
+<% if @page.title == 'Contact'%>
+
+<ol class="breadcrumb">
+	<li><a href="/">Home</a></li>
+	<li class="active">Contact</li>
 </ol>
 <% end %>
 
@@ -153,6 +161,40 @@
 <div class="page">
 	<p><%=raw @page.content_for(:body) %></p>
 </div>
+
+
+<% if @page.title == 'Contact'%>
+
+<div class="cols-md-6">
+	<h3>Cosire Design Innovation Pvt. Ltd.</h3>	
+	
+	<address>
+			
+			<p>National Design Business Incubalator(NDBI),</p>
+			<p>National Institute of Design(NID),</p>
+			<p>Paldi, Ahmedabad - 380007</p>
+			<p>office: (+91) 9033302011</p>
+			<p>mob.: (+91) 9510810866 / 8980939443</p>
+			<p>e-mail: contact@cosire.com</p>
+	</address>
+	<address>
+			<h3>New York Office</strong></h3>
+			<p>99 W Hawthorne Ave , Suite-216,</p>
+			<p>Valley Stream,</p>
+			<p>NY 11580</p>
+			<p>mob.: +1 (940) 603-4064</p>
+	</address>
+
+</div>
+
+<div class="cols-md-6">
+
+</div>
+
+<% end %>
+
+
+
 
 
 <% if @page.title == 'Achievements'%>
