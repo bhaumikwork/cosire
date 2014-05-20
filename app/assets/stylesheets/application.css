@@ -23,7 +23,7 @@ body {
   font-family: "Roboto", sans-serif !important;
 }
 
-h1, h2, h3, h4, h5, h6, p, blockquote {
+h1, h2, h3, h4, h5, h6, p, blockquote, li{
   font-family: "Roboto", sans-serif;
 }
 
@@ -45,7 +45,7 @@ h2 {
 
 }
 
-p {
+p, .page li {
   line-height: 24px;
   font-size: 16px;
   letter-spacing: 0.2px;

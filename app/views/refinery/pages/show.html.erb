@@ -1,8 +1,10 @@
 <h2><%= @page.title %></h2>
 
 <div class="banner"><%=raw @page.content_for(:banner) %></div>
+<div class="page">
+	<p><%=raw @page.content_for(:body) %></p>
+</div>
 
-<p><%=raw @page.content_for(:body) %></p>
 
 
 

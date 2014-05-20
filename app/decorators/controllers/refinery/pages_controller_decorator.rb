@@ -9,23 +9,23 @@ Refinery::PagesController.class_eval do
 		end
 	
 		def find_all_industries
-			@industries ||= ::Refinery::Projects::Project.where('work_category LIKE ?', '%industry%').all
+			@industries ||= ::Refinery::Projects::Project.where('work_category LIKE ?', '%industry%').order('position ASC')
 		end
 		
 		def find_all_spaces
-			@spaces ||= ::Refinery::Projects::Project.where('work_category LIKE ?', '%space%').all
+			@spaces ||= ::Refinery::Projects::Project.where('work_category LIKE ?', '%space%').order('position ASC')
 		end
 		
 		def find_all_digitals
-			@digitals ||= ::Refinery::Projects::Project.where('work_category LIKE ?', '%digital%').all
+			@digitals ||= ::Refinery::Projects::Project.where('work_category LIKE ?', '%digital%').order('position ASC')
 		end
 		
 		def find_all_brands
-			@brands ||= ::Refinery::Projects::Project.where('work_category LIKE ?', '%brand%').all
+			@brands ||= ::Refinery::Projects::Project.where('work_category LIKE ?', '%brand%').order('position ASC')
 		end
 		
 		def find_all_selfs
-			@selfs ||= ::Refinery::Projects::Project.where('work_category LIKE ?', '%self%').all
+			@selfs ||= ::Refinery::Projects::Project.where('work_category LIKE ?', '%self%').order('position ASC')
 		end
 		
 		
