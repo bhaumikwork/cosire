@@ -6,6 +6,56 @@
 </div>
 
 
+<% if @page.title == 'Intellectual Properties'%>
+<hr>
+<div class="ips">
+<div class="row">
+
+
+<h2>Ips</h2>
+<div class="team-profiles">
+	<% @ips.each do |ip| %>
+
+		<div class="col-md-6 team-member">
+				<div class="photo col-md-4">
+
+					<div class="normal-image">
+						<%= image_fu ip.profile, "160x200" %>
+					</div>
+				</div>
+
+				<div class="profile col-md-8">
+					<h3><%=raw ip.title %></h3>
+					<p class="designation"><%=raw ip.oneliner %></p>
+					<p><%=raw ip.description %></p>
+				</div>
+		</div>
+		<% next ip %>
+
+		<div class="col-md-6 team-member">
+				<div class="photo col-md-4">
+
+					<div class="normal-image">
+						<%= image_fu ip.profile, "160x200" %>
+					</div>
+				</div>
+
+				<div class="profile col-md-8">
+					<h3><%=raw ip.title %></h3>
+					<p class="designation"><%=raw ip.oneliner %></p>
+					<p><%=raw ip.description %></p>
+				</div>
+		</div>
+
+	<% end %>
+	</div>
+	</div>
+</div>
+
+<% end %>
+
+
+
 
 <% if @page.title == 'Startups'%>
 <hr>
