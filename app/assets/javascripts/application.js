@@ -36,6 +36,24 @@ $( document ).ready(function() {
 	});
 	
 	
+	$('.big-blocks:nth-child(6) a').attr("class", "various fancybox.iframe");
+	$('.big-blocks:nth-child(6) a').attr("href", "http://www.youtube.com/embed/TM3m1evORDw?autoplay=1&showinfo=0&controls=0");
+	
+	
+		$(".various").fancybox({
+			maxWidth	: 1000,
+			maxHeight	: 565,
+			fitToView	: false,
+			width		: '100%',
+			height		: '100%',
+			autoSize	: false,
+			closeClick	: false,
+			openEffect	: 'none',
+			closeEffect	: 'none'
+		});
+	
+	
+	
 	n = $('div.banner img').size();
 	
 	if (n == 1){
