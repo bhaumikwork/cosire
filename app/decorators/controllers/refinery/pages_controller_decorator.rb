@@ -9,7 +9,7 @@ Refinery::PagesController.class_eval do
 		end
 	
 		def find_all_industries
-			@industries ||= ::Refinery::Projects::Project.where('work_category LIKE ?', '%industry%').order('position ASC')
+			@industries ||= ::Refinery::Projects::Project.where('work_category LIKE ?', '%product%').order('position ASC')
 		end
 		
 		def find_all_spaces

@@ -63,13 +63,13 @@ p, .page li {
 
 /* Logo */
 .logo {
-  margin-top: 25px;
+  margin-top: 10px;
   height: 50px;
   margin-left: -15px;
 }
 
 .logo img {
-  height: 80%;
+  height: 60px;
 
 }
 
@@ -298,6 +298,10 @@ hr.front-line {
 
 .carousel-indicators {
   
+}
+
+ol.breadcrumb {
+  background-color: white !important;
 }
 
 
