@@ -1014,30 +1014,35 @@ doing.</p>
 <div id="container" class="clearfix" class="container">
 
 	<% @products.each do |product| %>		
-		<div class="item all col-md-3" data-category="all">			
+		<div class="item all col-md-3" data-category="all">
+			<a href="/projects/<%= product.id %>">
 			<div class="photo-1">
 				<%= image_fu product.profile, "235x235" %>
 			</div>			
 			<div class="photo-2">
 				<%= image_fu product.hover_image, "235x235" %>
 			</div>			
+			</a>
 		</div>	
 	<% end %>
 
 
 	<% @industries.each do |industry| %>		
 		<div class="item industrial col-md-3" data-category="industrial">			
+		<a href="/projects/<%= industry.id %>">
 			<div class="photo-1">
 				<%= image_fu industry.profile, "235x235" %>
 			</div>			
 			<div class="photo-2">
 				<%= image_fu industry.hover_image, "235x235" %>
 			</div>			
-		</div>	
+		</div>
+		</a>
 	<% end %>
 	
 	<% @spaces.each do |space| %>		
-		<div class="item space col-md-3" data-category="space">			
+		<div class="item space col-md-3" data-category="space">
+		<a href="/projects/<%= space.id %>">
 			<div class="photo-1">
 				<%= image_fu space.profile, "235x235" %>
 			</div>			
@@ -1045,11 +1050,13 @@ doing.</p>
 				<%= image_fu space.hover_image, "235x235" %>
 			</div>			
 		</div>	
+		</a>
 	<% end %>
 	
 	
 	<% @digitals.each do |digital| %>		
 		<div class="item interaction col-md-3" data-category="interaction">			
+		<a href="/projects/<%= digital.id %>">
 			<div class="photo-1">
 				<%= image_fu digital.profile, "235x235" %>
 			</div>			
@@ -1057,10 +1064,12 @@ doing.</p>
 				<%= image_fu digital.hover_image, "235x235" %>
 			</div>			
 		</div>	
+		</a>
 	<% end %>
 	
 	<% @brands.each do |brand| %>		
-		<div class="item brand col-md-3" data-category="brand">			
+		<div class="item brand col-md-3" data-category="brand">
+		<a href="/projects/<%= brand.id %>">		
 			<div class="photo-1">
 				<%= image_fu brand.profile, "235x235" %>
 			</div>			
@@ -1068,10 +1077,12 @@ doing.</p>
 				<%= image_fu brand.hover_image, "235x235" %>
 			</div>			
 		</div>	
+		</a>
 	<% end %>
 	
 	<% @selfs.each do |s| %>		
-		<div class="item self col-md-3" data-category="self">			
+		<div class="item self col-md-3" data-category="self">
+		<a href="/projects/<%= s.id %>">		
 			<div class="photo-1">
 				<%= image_fu s.profile, "235x235" %>
 			</div>			
@@ -1079,6 +1090,7 @@ doing.</p>
 				<%= image_fu s.hover_image, "235x235" %>
 			</div>			
 		</div>	
+		</a>
 	<% end %>
 
 
