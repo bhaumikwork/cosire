@@ -66,6 +66,13 @@ h2 {
 }
 
 
+.navbar-nav > li:hover {
+	border-bottom: 3px solid #00759f;
+	
+	ul {
+		margin-top: 3px;
+	}
+}
 
 .contact-div{
 	
@@ -172,4 +179,8 @@ hr.why-design {
 	hr {
 		margin-top: 0px !important;
 	}
+}
+
+.active-nav {
+	border-bottom: 3px solid #00759f;
 }

@@ -1,4 +1,7 @@
-
+<script>
+	$('.navbar-nav li').removeClass('active-nav');
+	$('.navbar-nav > li:nth-child(1)').addClass('active-nav');
+</script>
 <div class="blocks">
 	
 	<% @blocks.each do |block| %>
