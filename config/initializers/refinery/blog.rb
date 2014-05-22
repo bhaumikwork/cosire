@@ -1,4 +1,4 @@
-Refinery::Blog.configure do |config|
+# Refinery::Blog.configure do |config|
   # config.validate_source_url = false
 
   # config.comments_per_page = 10
@@ -13,4 +13,4 @@ Refinery::Blog.configure do |config|
   
   # If you're grafting onto an existing app, change this to your User class
   # Refinery::Blog.user_class = "Refinery::User"
-end
+# end

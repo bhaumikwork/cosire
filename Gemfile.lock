@@ -180,10 +180,6 @@ GEM
     refinerycms-images (2.1.2)
       dragonfly (~> 0.9.14)
       refinerycms-core (= 2.1.2)
-    refinerycms-inquiries (2.1.0)
-      filters_spam (~> 0.2)
-      refinerycms-core (~> 2.1.0)
-      refinerycms-settings (~> 2.1.0)
     refinerycms-pages (2.1.2)
       awesome_nested_set (~> 2.1.3)
       babosa (!= 0.3.6)
@@ -245,7 +241,6 @@ DEPENDENCIES
   refinerycms-boas!
   refinerycms-brands!
   refinerycms-industries!
-  refinerycms-inquiries (~> 2.1.0)
   refinerycms-interactions!
   refinerycms-ips!
   refinerycms-projects!

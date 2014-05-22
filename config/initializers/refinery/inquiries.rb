@@ -1,4 +1,4 @@
-Refinery::Inquiries.configure do |config|
+# Refinery::Inquiries.configure do |config|
   # Configure whether to show privacy link
   # config.show_contact_privacy_link = true
 
@@ -13,4 +13,4 @@ Refinery::Inquiries.configure do |config|
 
   # Configure name in 'from' email address
   # config.from_name = "no-reply"
-end
+# end
