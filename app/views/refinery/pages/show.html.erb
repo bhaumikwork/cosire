@@ -641,8 +641,9 @@
 			</div>			
 		</a>
 	</div>
-	</div>
+	
 	<% end %>
+	</div>
 <% end %>
 
 
@@ -766,19 +767,18 @@
 <hr>
 <div class="container">
 <% @servicepackages.each do |servicepackage| %>	
-<div class="col-md-3">	
-	<a href="/projects/<%= servicepackage.id %>">
-		<div class="photo-1">
-			<%= image_fu servicepackage.profile, "230x230" %>
-		</div>			
-		<div class="photo-2">
-			<%= image_fu servicepackage.hover_image, "230x230" %>
-		</div>			
-	</a>
-</div>
-</div>
+	<div class="col-md-3">	
+		<a href="/projects/<%= servicepackage.id %>">
+			<div class="photo-1">
+				<%= image_fu servicepackage.profile, "230x230" %>
+			</div>			
+			<div class="photo-2">
+				<%= image_fu servicepackage.hover_image, "230x230" %>
+			</div>			
+		</a>
+	</div>
 <% end %>
-
+</div>
 <% end %>
 
 
@@ -867,8 +867,9 @@
 		</div>			
 	</a>
 </div>
-</div>
+
 <% end %>
+</div>
 <% end %>
 
 
@@ -940,8 +941,9 @@
 		</div>			
 	</a>
 </div>
-</div>
+
 <% end %>
+</div>
 <% end %>
 
 
@@ -1059,9 +1061,9 @@
 			</div>			
 		</a>
 	</div>
-	</div>
-	<% end %>
 	
+	<% end %>
+	</div>
 	
 <% end %>
 
