@@ -41,15 +41,13 @@ $( document ).ready(function() {
 	
 	
 		$(".various").fancybox({
-			maxWidth	: 1000,
-			maxHeight	: 565,
-			fitToView	: false,
-			width		: '100%',
-			height		: '100%',
-			autoSize	: false,
+			maxWidth	: "854",
+			maxHeight	: "480",
+			fitToView	: false,			
+			autoSize	: true,
 			closeClick	: false,
 			openEffect	: 'none',
-			closeEffect	: 'none'
+			closeEffect	: 'none',
 		});
 	
 	
