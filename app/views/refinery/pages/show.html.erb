@@ -139,7 +139,7 @@
 <ol class="breadcrumb">
 	<li><a href="/">Home</a></li>
 	<li><a href="/services">Services</a></li>
-	<li class="active">Product Designing</li>
+	<li class="active">Product Design</li>
 </ol>
 <script>
 	$('.navbar-nav li').removeClass('active-nav');
@@ -264,14 +264,13 @@
 <div class="cols-md-6">
 	<h3>Cosire Design Innovation Pvt. Ltd.</h3>	
 	
-	<address>
-			
-			<p>National Design Business Incubalator(NDBI),</p>
-			<p>National Institute of Design(NID),</p>
-			<p>Paldi, Ahmedabad - 380007</p>
-			<p>office: (+91) 9033302011</p>
-			<p>mob.: (+91) 9510810866 / 8980939443</p>
-			<p>e-mail: contact@cosire.com</p>
+	<address>			
+		<p>National Design Business Incubalator(NDBI),</p>
+		<p>National Institute of Design(NID),</p>
+		<p>Paldi, Ahmedabad - 380007</p>
+		<p>office: (+91) 9033302011</p>
+		<p>mob.: (+91) 9510810866 / 8980939443</p>
+		<p>e-mail: contact@cosire.com</p>
 	</address>
 	
 	<address>
@@ -627,6 +626,23 @@
 	</div>
 	
 	</div>
+	
+	<h3>View Projects</h3>
+	<hr>
+	<div class="container">
+	<% @serviceuis.each do |serviceui| %>	
+	<div class="col-md-3">	
+		<a href="/projects/<%= serviceui.id %>">
+			<div class="photo-1">
+				<%= image_fu serviceui.profile, "230x230" %>
+			</div>			
+			<div class="photo-2">
+				<%= image_fu serviceui.hover_image, "230x230" %>
+			</div>			
+		</a>
+	</div>
+	</div>
+	<% end %>
 <% end %>
 
 
@@ -687,6 +703,23 @@
 		</div>
 
 </div>
+
+<h3>View Projects</h3>
+<hr>
+<div class="container">
+<% @servicespaces.each do |servicespace| %>	
+<div class="col-md-3">	
+	<a href="/projects/<%= servicespace.id %>">
+		<div class="photo-1">
+			<%= image_fu servicespace.profile, "230x230" %>
+		</div>			
+		<div class="photo-2">
+			<%= image_fu servicespace.hover_image, "230x230" %>
+		</div>			
+	</a>
+</div>
+<% end %>
+</div>
 <% end %>
 
 
@@ -728,6 +761,24 @@
 		</div>
 
 </div>
+
+<h3>View Projects</h3>
+<hr>
+<div class="container">
+<% @servicepackages.each do |servicepackage| %>	
+<div class="col-md-3">	
+	<a href="/projects/<%= servicepackage.id %>">
+		<div class="photo-1">
+			<%= image_fu servicepackage.profile, "230x230" %>
+		</div>			
+		<div class="photo-2">
+			<%= image_fu servicepackage.hover_image, "230x230" %>
+		</div>			
+	</a>
+</div>
+</div>
+<% end %>
+
 <% end %>
 
 
@@ -801,6 +852,23 @@
 		</div>
 
 </div>
+
+<h3>View Projects</h3>
+<hr>
+<div class="container">
+<% @servicebrands.each do |servicebrand| %>	
+<div class="col-md-3">	
+	<a href="/projects/<%= servicebrand.id %>">
+		<div class="photo-1">
+			<%= image_fu servicebrand.profile, "230x230" %>
+		</div>			
+		<div class="photo-2">
+			<%= image_fu servicebrand.hover_image, "230x230" %>
+		</div>			
+	</a>
+</div>
+</div>
+<% end %>
 <% end %>
 
 
@@ -857,6 +925,23 @@
 		</div>
 
 </div>
+
+<h3>View Projects</h3>
+<hr>
+	<div class="container">		
+<% @servicestrategies.each do |servicestrategy| %>	
+<div class="col-md-3">	
+	<a href="/projects/<%= servicestrategy.id %>">
+		<div class="photo-1">
+			<%= image_fu servicestrategy.profile, "230x230" %>
+		</div>			
+		<div class="photo-2">
+			<%= image_fu servicestrategy.hover_image, "230x230" %>
+		</div>			
+	</a>
+</div>
+</div>
+<% end %>
 <% end %>
 
 
@@ -959,6 +1044,25 @@
 	</div>
 	
 </div>
+
+	<h3>View Projects</h3>
+	<hr>
+	<div class="container">				
+	<% @serviceprojects.each do |serviceproject| %>	
+	<div class="col-md-3">	
+		<a href="/projects/<%= serviceproject.id %>">
+			<div class="photo-1">
+				<%= image_fu serviceproject.profile, "230x230" %>
+			</div>			
+			<div class="photo-2">
+				<%= image_fu serviceproject.hover_image, "230x230" %>
+			</div>			
+		</a>
+	</div>
+	</div>
+	<% end %>
+	
+	
 <% end %>
 
 
