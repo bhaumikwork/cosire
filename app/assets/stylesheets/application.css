@@ -388,9 +388,6 @@ ol.breadcrumb {
 
 @media(min-width:768px){
 
-  .blocks {
-    display: none;
-  }
   
   .navbar-nav > li:hover {
     border-bottom: 3px solid #00759f;
