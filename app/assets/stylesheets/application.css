@@ -14,6 +14,12 @@
  *= require_tree .
  */
 
+
+
+
+
+
+
 html {
   margin-top: 100px;
 } 
@@ -102,6 +108,9 @@ p, .page li, .tab-control li {
   color: black !important;
 }
 
+ul.navbar-nav {
+  float: right !important;
+}
 
 .navigation {
   padding-top: 46px;
@@ -335,3 +344,83 @@ ol.breadcrumb {
   width: 940px;
   margin: 0 auto;
 }
+@media(max-width:767px){
+  html {
+    margin-top: 50px;
+  }
+
+  .blocks {
+    display: none;
+  }
+  ul.navbar-nav {
+    float: left !important;
+    width: 100%;
+  }
+
+  .navbar-nav > li {
+    border-bottom: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-nav > li:hover {
+    border-bottom: none;
+  }
+  .navbar-nav > li:hover  ul {
+      margin-top: none;
+    }
+  
+  .logo {
+    margin-top: -7px;
+  }
+  .logo img {
+    height: 35px;
+  }
+
+  .small-logo {
+    height: 35px !important;
+    margin-top: 0px !important;  
+  }
+  .dropdown-menu {
+    display: none !important;
+  }
+}
+
+
+@media(min-width:768px){
+  .navbar-nav > li:hover {
+    border-bottom: 3px solid #00759f;
+  }
+  .navbar-nav > li:hover  ul {
+      margin-top: 3px;
+    }
+    
+  .logo {
+    margin-top: 10px;
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  
+}
+@media(min-width:992px){
+  .navbar-nav > li:hover {
+    border-bottom: 3px solid #00759f;
+  }
+  .navbar-nav > li:hover  ul {
+      margin-top: 3px;
+    }
+  }
+}
+@media(min-width:1200px){
+  .navbar-nav > li:hover {
+    border-bottom: 3px solid #00759f;
+  }
+  .navbar-nav > li:hover  ul {
+      margin-top: 3px;
+    }
+  }
+}
+
