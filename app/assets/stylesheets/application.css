@@ -15,11 +15,6 @@
  */
 
 
-
-
-
-
-
 html {
   margin-top: 100px;
 } 
@@ -89,6 +84,7 @@ p, .page li, .tab-control li {
 .navbar {
   min-height: 60px !important;
 }
+
 .navbar-nav {
   margin-top: 45px !important;
   margin-right: -25px !important;
@@ -339,11 +335,11 @@ ol.breadcrumb {
   opacity: 0.9;
 }
 
-
 .project-page {
   width: 940px;
   margin: 0 auto;
 }
+
 @media(max-width:767px){
   html {
     margin-top: 50px;
@@ -352,6 +348,7 @@ ol.breadcrumb {
   .blocks {
     display: none;
   }
+  
   ul.navbar-nav {
     float: left !important;
     width: 100%;
@@ -366,13 +363,15 @@ ol.breadcrumb {
   .navbar-nav > li:hover {
     border-bottom: none;
   }
+  
   .navbar-nav > li:hover  ul {
-      margin-top: none;
-    }
+    margin-top: none;
+  }
   
   .logo {
     margin-top: -7px;
   }
+  
   .logo img {
     height: 35px;
   }
@@ -412,7 +411,7 @@ ol.breadcrumb {
   .navbar-nav > li:hover  ul {
       margin-top: 3px;
     }
-  }
+  
 }
 @media(min-width:1200px){
   .navbar-nav > li:hover {
@@ -421,6 +420,6 @@ ol.breadcrumb {
   .navbar-nav > li:hover  ul {
       margin-top: 3px;
     }
-  }
+  
 }
 
