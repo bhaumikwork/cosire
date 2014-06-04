@@ -5,7 +5,7 @@
 /* Default Styles */
 
 body {
-	margin-top: 10px;
+	margin-top: 20px;
 	letter-spacing: 0.2px;
 
 }
@@ -52,7 +52,7 @@ h2.get-in-touch {
 }
 
 .client-div{
-	height: 170px;
+	height: 150px;
 	
 	
 }
@@ -79,9 +79,10 @@ h2.get-in-touch {
 
 
 
-
 .contact-div{
-	
+	strong {
+		font-size: 18px;
+	}
 	
 	img {
 		margin-top: -40px;
@@ -156,7 +157,11 @@ hr.why-design {
 }
 
 .pre-footer {
-
+	
+	hr {
+		margin-bottom: 20px;
+	}
+	
 	.get-in-touch {
 		h2 {
 			margin-bottom: 25px !important;	

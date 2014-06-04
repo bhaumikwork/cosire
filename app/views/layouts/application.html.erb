@@ -100,7 +100,7 @@
 
 <div class="pre-footer container">
 	<hr>
-	<div class="col-md-6 client">
+	<div class="col-md-5 client">
 		<% if @page.title == 'Clients' %>
 			<br>
 			<div class="col-md-4">
@@ -140,16 +140,16 @@
 				</a>
 			</div>
 		<% else %>
-			<h2 class="brand-quote">Clients</h2>
+			
 			<div class="client-div">
 				<a href="/pages/clients">
-					<%= image_tag('client.png', class: "img-responsive") %>
+					<%= image_tag('client.jpg', class: "img-responsive") %>
 				</a>
 			</div>
 		<% end %>
 	</div>
 
-	<div class="col-md-6">
+	<div class="col-md-7">
 		<% if @page.title == 'Contact' %>
 			<br>
 			<div class="col-md-4">
@@ -189,19 +189,20 @@
 				</a>
 			</div>
 
-		<% else %>
-			<h2 class="get-in-touch" style="margin-left:13px; margin-bottom:25px">Get in touch</h2>
-			<div class="contact-div col-md-6">
-				<p>Cosire Innovations Pvt Ltd</p>
-				<p>NDBI, NID, Paldi,</p>
-				<p>Ahmedabad - 380007</p>
+		<% else %>			
+			<div class="contact-div col-md-7">
+				<p><strong>Cosire Design Innovation Pvt Ltd</strong></p>
+				<p>National Design Business Incubalator</p>
+				<p>NID, Paldi, Ahmedabad - 380007</p>
 				<p>mob.: (+91) 9510810866</p>
-				<p>email: contact@cosire.com</p>
+				<p>email : contact@cosire.com</p>
 			</div>
-			<div class="contact-div col-md-5">
-				<a href="/pages/contact">
-					<%= image_tag('cosiremap.jpg', size: "250x180")  %>
-				</a>
+			<div class="contact-div col-md-4">
+				<p><strong>Cosire Inc.</strong></p>
+				<p>469 7th AVE Suite 1223,</p>
+				<p>New York, NY-10018</p>
+				<p>mob.: +1 (516) 717 5011</p>
+				<p>email : b.patel@cosire.com</p>				
 			</div>
 		<% end %>
 	</div>
